@@ -15,4 +15,6 @@
         </head>
 ```
 > ```<style>```元素放在HTML的首部里，```<style>```标记还有一个（可选的）属性，名为type，它能告诉浏览器你在使用什么类型的样式。[例](./mission.html)
-
+## 资料库
+#### [Html颜色代码](http://www.shouce.ren/api/html/html4/appendix-color.html)  
+#### [Html字体样式](https://www.w3schools.com/cssref/css_websafe_fonts.asp)  

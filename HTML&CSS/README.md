@@ -11,11 +11,15 @@ head元素的内容就是网页的信息
 body元素的内容就是将在浏览器里看到的东西
 #### ```<a>...</a>```元素
 ```<a>```元素创建一个超文本链接，链接到另一个Web页面  
+
 ```<a>```元素的内容会成为Web页面中可单击的文本，在浏览器中，连接文本会显示有下划线，指示这是可单击  
+
 ```<a href="elixir.html">elixirs</a>```要通过href属性来指定链接的目标文件，对于这个链接，浏览器会显示文本”elixirs”，单击这个文本时，用户会被带往”elixir.html”页面。[例](./Sample/lounge.html)
 ### 属性：
 ```<a herf="irule.html>```herf属性告诉我们一个超链接的目标文件  
+
 ```<style type="text/css>```type属性告诉我们使用哪一种样式语言，这里是CSS  
+
 ```<img src="sweetphoto.gif"```src属性指定一个img标记显示的图像文件名  
 > src为属性名，sweetphoto.gif为属性值
 ## 层叠样式表（Cascading Style Sheets，CSS）  

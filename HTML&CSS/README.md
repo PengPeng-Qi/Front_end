@@ -28,7 +28,8 @@ body元素的内容就是将在浏览器里看到的东西
 ##### 向下链接到一个子文件夹
 lounge.html中的```<a>```元素是这样的：```<a href="about/directions.html"> directions</a>```
 ##### 向上链接到一个父文件夹
-diretions.html中的```<a>```元素是这样的：```<a href="../lounge.html">Back to the Lounge</a>```
+diretions.html中的```<a>```元素是这样的：```<a href="../lounge.html">Back to the Lounge</a>``` 
+> 如果需要向上两级文件夹，则使用```<a href="../../lounge.html">Back to the Lounge</a>``` 
 ## 层叠样式表（Cascading Style Sheets，CSS）  
 层叠样式表用来控制HTML的表现。  
 #### style元素

@@ -36,7 +36,7 @@ diretions.html中的```<a>```元素是这样的：
 ```html  
     <a href="../lounge.html">Back to the Lounge</a>
 ``` 
-> 如果需要向上两级文件夹，则使用
+如果需要向上两级文件夹，则使用:  
 ```html  
     <a href="../../lounge.html">Back to the Lounge</a>
 ``` 

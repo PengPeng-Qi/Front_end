@@ -15,7 +15,8 @@ body元素的内容就是将在浏览器里看到的东西
 
 ```<a>```元素的内容会成为Web页面中可单击的文本，在浏览器中，连接文本会显示有下划线，指示这是可单击  
 
-```<a href="elixir.html">elixirs</a>```要通过href属性来指定链接的目标文件，对于这个链接，浏览器会显示文本”elixirs”，单击这个文本时，用户会被带往”elixir.html”页面。[例](./Sample/lounge.html)
+```<a href="elixir.html">elixirs</a>```要通过href属性来指定链接的目标文件，对于这个链接，浏览器会显示文本”elixirs”，单击这个文本时，用户会被带往”elixir.html”页面。[例](./Sample/lounge.html)  
+> 文字和图片都可以作为链接的标签
 ### 属性
 ```<a href="irule.html>```超文本引用（hypertextreference，href）属性告诉我们一个超链接的目标文件  
 
@@ -39,6 +40,8 @@ diretions.html中的```<a>```元素是这样的：
 ```html  
     <a href="../../lounge.html">Back to the Lounge</a>
 ``` 
+> src元素也一样  
+> 为网站选择的文件名和文件夹名中不能使用空格
 ## 层叠样式表（Cascading Style Sheets，CSS）  
 层叠样式表用来控制HTML的表现。  
 #### style元素

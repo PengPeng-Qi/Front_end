@@ -6,7 +6,7 @@
 #### 注释
 把注释放在 ``` <!-- 和 --> ``` 之间，例如:  
 ```html
- <!-- Here's the beginning of the lounge content --> 
+     <!-- Here's the beginning of the lounge content --> 
 ```   
 > 注意：```"<!--" 和 "-->"```之间放置的所有内容（甚至是HTML）都会被浏览器忽略。
 #### head元素
@@ -29,7 +29,10 @@ body元素的内容就是将在浏览器里看到的东西
 #### href属性
 > 若文件夹lounge中有lounge.html文件 + 文件夹about，文件夹about中有directions.html
 ##### 向下链接到一个子文件夹
-lounge.html中的```<a>```元素是这样的：```<a href="about/directions.html"> directions</a>```
+lounge.html中的```<a>```元素是这样的：  
+```html
+    <a href="about/directions.html"> directions</a>
+```
 ##### 向上链接到一个父文件夹
 diretions.html中的```<a>```元素是这样的：```<a href="../lounge.html">Back to the Lounge</a>``` 
 > 如果需要向上两级文件夹，则使用```<a href="../../lounge.html">Back to the Lounge</a>``` 

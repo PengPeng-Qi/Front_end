@@ -16,12 +16,18 @@ body元素的内容就是将在浏览器里看到的东西
 
 ```<a href="elixir.html">elixirs</a>```要通过href属性来指定链接的目标文件，对于这个链接，浏览器会显示文本”elixirs”，单击这个文本时，用户会被带往”elixir.html”页面。[例](./Sample/lounge.html)
 ### 属性：
-```<a herf="irule.html>```超文本引用（hypertextreference，herf）属性告诉我们一个超链接的目标文件  
+```<a href="irule.html>```超文本引用（hypertextreference，href）属性告诉我们一个超链接的目标文件  
 
 ```<style type="text/css>```type属性告诉我们使用哪一种样式语言，这里是CSS  
 
 ```<img src="sweetphoto.gif"```src属性指定一个img标记显示的图像文件名  
 > src为属性名，sweetphoto.gif为属性值
+#### href属性
+> 若文件夹lounge中有lounge.html文件 + 文件夹about，文件夹about中有directions.html
+##### 向下链接到一个子文件夹
+lounge.html中的```<a>```元素是这样的：```<a href="about/directions.html"> directions</a>```
+##### 向上链接到一个父文件夹
+diretions.html中的```<a>```元素是这样的：```<a href="../lounge.html">Back to the Lounge</a>```
 ## 层叠样式表（Cascading Style Sheets，CSS）  
 层叠样式表用来控制HTML的表现。  
 #### style元素：

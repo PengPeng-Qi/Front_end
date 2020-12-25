@@ -5,6 +5,8 @@
 #### 注释：
 把注释放在 ``` <!-- 和 --> ``` 之间，例如``` <!-- Here's the beginning of the lounge content --> ```   
 > 注意：```"<!--" 和 "-->"```之间放置的所有内容（甚至是HTML）都会被浏览器忽略。
+#### head元素的内容就是网页的信息
+#### body元素的内容就是将在浏览器里看到的东西
 ## 层叠样式表（Cascading Style Sheets，CSS）  
 层叠样式表用来控制HTML的表现。  
 #### style元素：

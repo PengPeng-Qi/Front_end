@@ -33,7 +33,7 @@ diretions.html中的```<a>```元素是这样的：```<a href="../lounge.html">Ba
 ## 层叠样式表（Cascading Style Sheets，CSS）  
 层叠样式表用来控制HTML的表现。  
 #### style元素
-```<html>
+```html
         <head>
             <title>Starbuzz Coffee</title>
             <style type="text/css">

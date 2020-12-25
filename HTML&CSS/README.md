@@ -40,8 +40,8 @@ diretions.html中的```<a>```元素是这样的：
 ```html  
     <a href="../../lounge.html">Back to the Lounge</a>
 ``` 
-> src元素也一样  
-> 为网站选择的文件名和文件夹名中不能使用空格
+> * src元素也一样  
+> * 为网站选择的文件名和文件夹名中不能使用空格
 ## 层叠样式表（Cascading Style Sheets，CSS）  
 层叠样式表用来控制HTML的表现。  
 #### style元素

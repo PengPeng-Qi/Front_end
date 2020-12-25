@@ -12,7 +12,7 @@ body元素的内容就是将在浏览器里看到的东西
 #### ```<a>...</a>```元素
 ```<a>```元素用于创建指向另一个页面的链接  
 ```<a>```元素的内容就是连接文本。在浏览器中，连接文本会显示有下划线，指示这是可单击的  
-```<a href="elixir.html">elixirs<a>```要通过href属性来指定链接的目标文件，对于这个链接，浏览器会显示文本”elixirs”，单击这个文本时，用户会被带往”elixir.html”页面。  
+```<a href="elixir.html">elixirs</a>```要通过href属性来指定链接的目标文件，对于这个链接，浏览器会显示文本”elixirs”，单击这个文本时，用户会被带往”elixir.html”页面。  
 ## 层叠样式表（Cascading Style Sheets，CSS）  
 层叠样式表用来控制HTML的表现。  
 #### style元素：

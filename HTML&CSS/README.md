@@ -55,8 +55,9 @@ body元素的内容就是将在浏览器里看到的东西
 > * 列表中镶嵌一个列表，可以把```<ol>```或```<ul>```作为某个```<li>```的内容，[例](./Sample/ul_ol_li.html)  
 ***
 #### ```<img>```元素
-```<img src="image/drinks.gif" alt="The typical new pencil can draw a line 35 miles long." width="48" height="100">```   
-    
+```html
+    <img src="image/drinks.gif" alt="The typical new pencil can draw a line 35 miles long." width="48" height="100">
+```   
 * src属性不只是用于相对链接，还可以在src属性中放入URL。  
   
 * alt属性需要指定描述这个图像的一些文本，如果图像未显示，就会使用这个文本来取代它。  

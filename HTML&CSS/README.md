@@ -1,8 +1,8 @@
-# 基础知识
-## 超文本标记语言（HyperText Markup Language，HTML）  
+# 基础知识  :balloon:
+## 超文本标记语言（HyperText Markup Language，HTML） :triangular_flag_on_post: 
 超文本标记语言用来建立网页的结构。  
-### 元素
-#### 元素 = 开始标记 + 内容 + 结束标记  
+### 元素 :golf:
+#### 元素 = 开始标记 + 内容 + 结束标记   
 ***
 #### 注释
 把注释放在 ``` <!-- 和 --> ``` 之间，例如:  ```<!-- Here's the beginning of the lounge content --> ```   
@@ -54,7 +54,21 @@ body元素的内容就是将在浏览器里看到的东西
 > * ```<ol>```和```<ul>```只能包含```<li>```元素  
 > * 列表中镶嵌一个列表，可以把```<ol>```或```<ul>```作为某个```<li>```的内容，[例](./Sample/ul_ol_li.html)  
 ***
-### 属性
+### 嵌套 :golf:
+把一个元素放在另一个元素里叫作嵌套  
+* ```<q>```嵌套在```<p>```中  
+* ```<p>```嵌套在```<body>```中  
+* ```<body>```嵌套在```<html>```中  
+* ```<title>```嵌套在```<head>```中  
+* ```<head>```嵌套在```<html>```中  
+### 特殊字符 :golf:
+    如果要在浏览器上显示"<"或">"等特殊符合，需要查找相应符号的字符实体，例如：  
+* "<"字符实体为```&lt;```   
+* ">"字符实体为```&gt;```  
+* "&"字符实体为```&amp;```  
+* 版权符号字符实体为```&copyright;```  
+> 想要查询更多符号的字符实体，可进入[w3schools_icons](https://www.w3schools.com/icons/default.asp)查询
+### 属性 :golf:
 ```<a href="irule.html>```超文本引用（hypertextreference，href）属性告诉我们一个超链接的目标文件  
 
 ```<style type="text/css>```type属性告诉我们使用哪一种样式语言，这里是CSS  
@@ -81,7 +95,7 @@ diretions.html中的```<a>```元素是这样的：
 > * src元素也一样  
 > * 为网站选择的文件名和文件夹名中不能使用空格
 ***
-## 层叠样式表（Cascading Style Sheets，CSS）  
+## 层叠样式表（Cascading Style Sheets，CSS）  :triangular_flag_on_post:
 层叠样式表用来控制HTML的表现。  
 #### style元素
 ```html
@@ -94,8 +108,15 @@ diretions.html中的```<a>```元素是这样的：
 ```
 > ```<style>```元素放在HTML的首部里，```<style>```标记还有一个（可选的）属性，名为type，它能告诉浏览器你在使用什么类型的样式。[例](./Sample/mission.html)
 ***
-## 资料库
+#### 其他元素
+* ```<code>```用来显示计算机程序的代码  
+* ```<pre>```希望浏览器按输入的方式原样显示文本 
+* ```<em>```使用这个元素来标记你想用不同方式展示的文本  
+* ```<strong>```使用这个元素来标记你希望特别强调的文本  
+* ```<time>```用来告诉浏览器这个内容是一个日期或时间，或者同时包含日期和时间   
+## 资料库 :triangular_flag_on_post:
 ### [Html颜色代码](http://www.shouce.ren/api/html/html4/appendix-color.html) 
 > 用CSS指定颜色有很多不同的方式，最常用的一种方式为“十六进制码”，#d2b48c就是一个十六进制码，实际上是土黄色。
 ### [Html字体样式](https://www.w3schools.com/cssref/css_websafe_fonts.asp)  
+### [w3schools_icons](https://www.w3schools.com/icons/default.asp)
 

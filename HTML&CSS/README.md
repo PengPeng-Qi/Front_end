@@ -50,6 +50,8 @@ body元素的内容就是将在浏览器里看到的东西
 > * **l**ist **i**tem -- **li**  
 > * **o**rdered **l**ist -- **ol**  
 > * **u**nordered **l**ist -- **ul**  
+> * ```<ol>```与```<li>``` 或 ```<ul>```与```<li>``` 总是一起使用  
+> * ```<ol>```和```<ul>```只能包含```<li>```元素
 ***
 ### 属性
 ```<a href="irule.html>```超文本引用（hypertextreference，href）属性告诉我们一个超链接的目标文件  

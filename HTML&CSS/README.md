@@ -70,6 +70,19 @@ body元素的内容就是将在浏览器里看到的东西
 > * ```<img>```元素是一个内联元素，它不会在前面或后面插入换行。 
 > * 一般，图像宽度小于800像素，logo宽度一般在100到200像素之间。  
 ***
+#### ```<meta>```标记
+```html
+<meta charset="utf-8">
+```  
+* charset -- 要在charset属性中指定字符编码   
+
+* meta -- 表示我们要告诉浏览器关于页面的一些信息...   
+
+* utf--8 -- 是[unicode](https://zh.wikipedia.org/wiki/Unicode)系列中的一个编码，Web页面中使用的就是utf-8，详情见[&#128279;](https://www.w3schools.com/charsets/)  
+> * ```<meta>```标记要放在```<head>```元素中，放在元素```<title>```上  
+> * ```<head>```元素中放置```<title>```、```<meta>```、```<style>```元素  
+> * void元素中不能嵌套内联元素,例如```<img>```，在```<img>```元素中，src、alt属性是必要的      
+***
 #### 其他元素
 * ```<code>```用来显示计算机程序的代码  
 * ```<pre>```希望浏览器按输入的方式原样显示文本 
@@ -130,6 +143,7 @@ diretions.html中的```<a>```元素是这样的：
 ```
 > ```<style>```元素放在HTML的首部里，```<style>```标记还有一个（可选的）属性，名为type，它能告诉浏览器你在使用什么类型的样式。[例](./Sample/mission.html)
 ***
+## HTML验证链接[&#128279;](https://validator.w3.org/)
 ## 资料库 :triangular_flag_on_post:
 ### [Html颜色代码](http://www.shouce.ren/api/html/html4/appendix-color.html) 
 > 用CSS指定颜色有很多不同的方式，最常用的一种方式为“十六进制码”，#d2b48c就是一个十六进制码，实际上是土黄色。

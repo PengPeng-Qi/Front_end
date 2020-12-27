@@ -176,7 +176,16 @@ p {
 ```
 > * 上面的"h1","h1,h2"叫作**选择器**(selector)  
 > * border-bottom这个属性控制元素下边框的外观  
+> * sans-serif字体适合作标题，这种字体没有衬线，段落一般使用serif字体，有[衬线](https://baike.baidu.com/item/%E8%A1%AC%E7%BA%BF%E5%AD%97%E4%BD%93)  
 > * 使用border-bottom，这条线会延伸到页面边缘，而使用underline时，下划线只会出现在文本下面  
+***
+#### ```<link>```元素  
+不再需要```<style>```元素  
+```css
+    <link type="text/css" rel="stylesheet" href="lounge.css">
+```
+* ```<link>```void元素，键入外部信息，放在```<head>```元素中    
+* rel属性指定了HTML文件与所链接的文件之间的关系，我们要链接到一个样式表，所以这里使用值"stylesheet"  
 ## HTML验证链接[&#128279;](https://validator.w3.org/)
 ## 资料库 :triangular_flag_on_post:
 ### [Html颜色代码](http://www.shouce.ren/api/html/html4/appendix-color.html) 

@@ -132,7 +132,7 @@ diretions.html中的```<a>```元素是这样的：
 ***
 ## 层叠样式表（Cascading Style Sheets，CSS）  :triangular_flag_on_post:
 层叠样式表用来控制HTML的表现。  
-#### style元素
+### style元素 :golf:
 ```html
         <head>
             <title>Starbuzz Coffee</title>
@@ -141,8 +141,41 @@ diretions.html中的```<a>```元素是这样的：
             </style>
         </head>
 ```
-> ```<style>```元素放在HTML的首部里，```<style>```标记还有一个（可选的）属性，名为type，它能告诉浏览器你在使用什么类型的样式。[例](./Sample/mission.html)
+> ```<style>```元素放在HTML的首部里，```<style>```标记还有一个（可选的）属性，名为type，它能告诉浏览器你在使用什么类型的样式。[例](./Sample/mission.html)  
 ***
+### 添加CSS :golf:
+若要改变```<p>```元素中内容的格式，则需要选择需要添加的元素，如：  
+```css
+p {
+    background-color: red;
+    border: 1px solid gray;
+}
+```
+> * CSS的规则需要放在```<style>```元素中  
+改变标题的字体和颜色：  
+```css
+    h1 {
+        font-family: sans-serif;
+        color: gray;
+        border-bottom: 1px solid gray;
+    }    
+    <!-- border-bottom这个属性控制元素下边框的外观 -->
+    <!-- 使用border-bottom，这条线会延伸到页面边缘，而使用underline时，下划线只会出现在文本下面 -->
+    h2 {
+        font-family: sans-serif;
+        color: gray;
+        border-bottom: 1px solid gray;
+    }
+```
+也可以写成：  
+```css
+    h1, h2 {
+        font-family: sans-serif;
+        color: gray;
+        border-bottom: 1px solid gray;
+    }    
+```
+> * 上面的"h1","h1,h2"叫作**选择器**(selector)
 ## HTML验证链接[&#128279;](https://validator.w3.org/)
 ## 资料库 :triangular_flag_on_post:
 ### [Html颜色代码](http://www.shouce.ren/api/html/html4/appendix-color.html) 

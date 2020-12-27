@@ -152,15 +152,14 @@ p {
 }
 ```
 > * CSS的规则需要放在```<style>```元素中  
+  
 改变标题的字体和颜色：  
 ```css
     h1 {
         font-family: sans-serif;
         color: gray;
         border-bottom: 1px solid gray;
-    }    
-    <!-- border-bottom这个属性控制元素下边框的外观 -->
-    <!-- 使用border-bottom，这条线会延伸到页面边缘，而使用underline时，下划线只会出现在文本下面 -->
+    }   
     h2 {
         font-family: sans-serif;
         color: gray;
@@ -175,7 +174,9 @@ p {
         border-bottom: 1px solid gray;
     }    
 ```
-> * 上面的"h1","h1,h2"叫作**选择器**(selector)
+> * 上面的"h1","h1,h2"叫作**选择器**(selector)  
+> * border-bottom这个属性控制元素下边框的外观  
+> * 使用border-bottom，这条线会延伸到页面边缘，而使用underline时，下划线只会出现在文本下面  
 ## HTML验证链接[&#128279;](https://validator.w3.org/)
 ## 资料库 :triangular_flag_on_post:
 ### [Html颜色代码](http://www.shouce.ren/api/html/html4/appendix-color.html) 

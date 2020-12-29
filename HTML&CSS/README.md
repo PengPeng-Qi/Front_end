@@ -187,6 +187,7 @@ p {
 * ```<link>```void元素，键入外部信息，放在```<head>```元素中    
 * rel属性指定了HTML文件与所链接的文件之间的关系，我们要链接到一个样式表，所以这里使用值"stylesheet"  
 ## HTML验证链接[&#128279;](https://validator.w3.org/)
+## CSS验证链接[&#128279;](http://jigsaw.w3.org/css-validator/)
 ## 资料库 :triangular_flag_on_post:
 ### [Html颜色代码](http://www.shouce.ren/api/html/html4/appendix-color.html) 
 > 用CSS指定颜色有很多不同的方式，最常用的一种方式为“十六进制码”，#d2b48c就是一个十六进制码，实际上是土黄色。

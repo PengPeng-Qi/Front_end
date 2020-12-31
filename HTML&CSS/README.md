@@ -186,6 +186,76 @@ p {
 ```
 * ```<link>```void元素，键入外部信息，放在```<head>```元素中    
 * rel属性指定了HTML文件与所链接的文件之间的关系，我们要链接到一个样式表，所以这里使用值"stylesheet"  
+***
+#### 覆盖继承 
+若想在```<body>```中使用字体sans-serif,又想在```<em>```中使用字体serif，则  
+```css
+body {
+    font-family: sans-serif;
+}
+
+em {
+    font-family: serif;
+}
+```
+> ```<em>```元素嵌套在```<body>```内，更多继承规则见《CSS Pocket Reference》   
+***
+#### 注释
+用```/*```和```*/```包围   
+***
+#### 属性
+* color: 设置文本元素字体颜色  
+* background-color: 控制元素的背景颜色  
+* background-image: 在元素后面放置一张图像  
+* top: 控制元素顶部的位置  
+* left: 指定一个元素的左边所在位置  
+* list-style: 允许改变列表中列表项的外观  
+* border: 在一个元素周围加边框。可以有一个实线边框、凸起边框、虚线边框...  
+* padding: 如果在一个元素边缘和它的内容之间需要有空间，可以使用padding(内边距)  
+* letter-spacing: 在字母之间设置间距  
+* font-style: 设置斜体文本  
+* font-size: 让文本更大或者更小  
+* font-weight: 控制文本的粗细，可以用它设置粗体  
+* text-align: 将文本左对齐，居中或者右对齐  
+* text-decoration: 对文本加一些装饰，包括上划线、下划线和删除线  
+***
+#### font-family字体体系
+* sans-serif: 没有衬线的字体  
+* serif: 有衬线的字体  
+* monospace: 包含固定宽度的字符  
+* cursive: 看似手写的字体  
+* fantasy: 包含某种风格的装饰性字体  
+#### 特殊CSS规则
+* ```@font-face```: 获取一个Web字体，并为他分配一个font-family名  
+```css
+@font-face {
+    font-family: "Emblema One";
+    src: url("./EmblemaOne-Regular.woff"), 
+         url("./EmblemaOne-Regular.ttf"); 
+}
+```
+* ```@import```: 允许导入其他CSS文件  
+* ```@media```: 允许创建某些特定于某些“媒体”类型的CSS规则，如印刷页、手机  
+***
+#### 字体大小
+设置一个字体高度为14像素：字母的最低部分与最高部分之间的距离有14像素  
+```css
+body{
+    font-size: 14px;
+}
+```
+父元素的1.5倍：  
+```css
+h1 {
+    font-size: 150%;
+}
+```
+等同于：
+```css
+h1 {
+    font-size: 1.5em;
+}
+```
 ## HTML验证链接[&#128279;](https://validator.w3.org/)
 ## CSS验证链接[&#128279;](http://jigsaw.w3.org/css-validator/)
 ## 资料库 :triangular_flag_on_post:
@@ -193,4 +263,5 @@ p {
 > 用CSS指定颜色有很多不同的方式，最常用的一种方式为“十六进制码”，#d2b48c就是一个十六进制码，实际上是土黄色。
 ### [Html字体样式](https://www.w3schools.com/cssref/css_websafe_fonts.asp)  
 ### [w3schools_icons](https://www.w3schools.com/icons/default.asp)
+### 字体托管网站:[FontSquiriel](https://www.fontsquirrel.com/)、[Google Web字体服务](https://fonts.google.com/)  
 

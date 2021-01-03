@@ -144,12 +144,13 @@ diretions.html中的```<a>```元素是这样的：
 > ```<style>```元素放在HTML的首部里，```<style>```标记还有一个（可选的）属性，名为type，它能告诉浏览器你在使用什么类型的样式。[例](./Sample/mission.html)  
 ***
 ### 添加CSS :golf:
-若要改变```<p>```元素中内容的格式，则需要选择需要添加的元素，如：  
+增加CSS文件，若要改变```<p>```元素中内容的格式，则需要选择需要添加的元素，如：  
 ```css
 p {
     background-color: red;
-    border: 1px solid gray;
+    border: 1px solid black;
 }
+/* 1px solid black设置下边框的样式：粗细为1像素，黑色，实线 */
 ```
 > * CSS的规则需要放在```<style>```元素中  
   
@@ -180,12 +181,14 @@ p {
 > * 使用border-bottom，这条线会延伸到页面边缘，而使用underline时，下划线只会出现在文本下面  
 ***
 #### ```<link>```元素  
-不再需要```<style>```元素  
+```<link>```元素：从html到外部样式表,不再需要```<style>```元素    
 ```css
+    <title>Head First Lounge</title>
     <link type="text/css" rel="stylesheet" href="lounge.css">
+    /* lounge.css指链接到外部样式表的html */
 ```
 * ```<link>```void元素，键入外部信息，放在```<head>```元素中    
-* rel属性指定了HTML文件与所链接的文件之间的关系，我们要链接到一个样式表，所以这里使用值"stylesheet"  
+* rel属性指定了HTML文件与所链接的文件之间的关系，我们要链接到一个样式表，所以这里使用值"stylesheet"   
 ***
 #### 覆盖继承 
 若想在```<body>```中使用字体sans-serif,又想在```<em>```中使用字体serif，则  
@@ -219,14 +222,39 @@ em {
 * text-align: 将文本左对齐，居中或者右对齐  
 * text-decoration: 对文本加一些装饰，包括上划线、下划线和删除线  
 ***
-#### font-family字体体系
+#### 字体
+***
+##### 字体
+```css
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+}
+/* 使用font-family属性可以指定多个字体，只需要输入这些字体名(大小写字母必须一致)，并用逗号隔离，最后放一个常用字体，例如sans-serif、monospace等 */
+```
+> 查看用户计算机是否有Verdana，如果有，则显示Verdana，如果没有Verdana，且有Geneva，则显示Geneva，依次进行，如果前面的字体都没有，则使用浏览器的默认字体"sans-serif"。   
+
+每个font-family包含一组有共同特征的字体。共有五个字体系列：  
+
 * sans-serif: 没有衬线的字体  
 * serif: 有衬线的字体  
-* monospace: 包含固定宽度的字符  
-* cursive: 看似手写的字体  
-* fantasy: 包含某种风格的装饰性字体  
-#### 特殊CSS规则
-* ```@font-face```: 获取一个Web字体，并为他分配一个font-family名  
+* monospace: 包含固定宽度的字体  
+* cursive: 看似手写字体  
+* fantasy: 某种风格的装饰字体   
+> 若字体名为Courier New,则在两边加上引号，就像:```font-family:"Courier New", Courier;```  
+> sans-serif并不是具体的字体名，他的字体的浏览器定义的字体的系列的默认字体  
+***  
+**Web字体**  
+字体使用了一种".woff"的文件拓展名，这表示Web开放字体格式  
+  
+> * 字体常用格式：
+> * TureType字体：            .tff  
+> * OpenType字体：            .otf  
+> * Embedded OpenType字体：   .eot  
+> * SVG字体：                 .svg  
+> * Web开放字体格式：          .woff  
+
+**也可以把字体放在Web上：**  
+```@font-face```: 获取一个Web字体，并为他分配一个font-family名  
 ```css
 @font-face {
     font-family: "Emblema One";
@@ -234,15 +262,22 @@ em {
          url("./EmblemaOne-Regular.ttf"); 
 }
 ```
-* ```@import```: 允许导入其他CSS文件  
-* ```@media```: 允许创建某些特定于某些“媒体”类型的CSS规则，如印刷页、手机  
-***
-#### 字体大小
+在CSS中使用font-family名
+```css
+h1 {
+    font-family: "Emblema One", sans-serif;
+}
+```
+> ```@import```: 允许导入其他CSS文件  
+> ```@media```: 允许创建某些特定于某些“媒体”类型的CSS规则，如印刷页、手机
+
+##### 字体大小
 设置一个字体高度为14像素：字母的最低部分与最高部分之间的距离有14像素  
 ```css
-body{
+body {
     font-size: 14px;
 }
+/* 字体大小font-size控制 */
 ```
 父元素的1.5倍：  
 ```css
@@ -256,12 +291,63 @@ h1 {
     font-size: 1.5em;
 }
 ```
+##### 字体颜色
+```css
+body {
+    color: silver;
+}
+```
+##### 字体粗细
+```css
+body {
+    font-weight: bold;
+}
+```
+##### 文本风格
+```css
+body {
+    text-decoration: underline;
+}
+```
+***
+#### 增加类
+```html
+    <p class="greentea">
+    <!-- 要将一个元素加入一个类，只需要增加元素"class",并提供类名"greentea" -->
+```
+```css
+    p.greentea {
+        color: green;
+    }
+    /* p.greentea类选择器 */
+```
+若想再对```<blockquote>```也做同样的处理  
+```css
+blockquote.greentea, p.greentea {
+    color: green;
+}
+```
+在html中也需要写上  
+```html
+<blockquote class="greentea">
+```
+如果想把```<h1>```、```<h2>```、```<p>```、```<blockquote>```都增加到greentea类，可以在css中写入
+```css
+.greentea {
+    color: green;
+}
+```
+> 如果省略元素名，只有一个点，后面是类名，那么这个规则会应用到这个类的所有成员
+##### 一个元素加入多个类
+```html
+<p class="greentea raspberry blueberry">
+<!-- 类名的顺序不重要,会按照CSS文件最后一个值来选择 -->
+```
 ## HTML验证链接[&#128279;](https://validator.w3.org/)
 ## CSS验证链接[&#128279;](http://jigsaw.w3.org/css-validator/)
 ## 资料库 :triangular_flag_on_post:
 ### [Html颜色代码](http://www.shouce.ren/api/html/html4/appendix-color.html) 
 > 用CSS指定颜色有很多不同的方式，最常用的一种方式为“十六进制码”，#d2b48c就是一个十六进制码，实际上是土黄色。
 ### [Html字体样式](https://www.w3schools.com/cssref/css_websafe_fonts.asp)  
-### [w3schools_icons](https://www.w3schools.com/icons/default.asp)
+### [w3schools_icons](https://www.w3schools.com/icons/default.asp) 
 ### 字体托管网站:[FontSquiriel](https://www.fontsquirrel.com/)、[Google Web字体服务](https://fonts.google.com/)  
-

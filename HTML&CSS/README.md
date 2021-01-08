@@ -262,7 +262,8 @@ body {
 > * Web开放字体格式：          .woff  
 
 **也可以把字体放在Web上：**  
-```@font-face```: 获取一个Web字体，并为他分配一个font-family名  
+```@font-face```: 获取一个Web字体，并为他分配一个font-family名   
+
 ```css
 @font-face {
     font-family: "Emblema One";
@@ -287,6 +288,16 @@ body {
 }
 /* 字体大小font-size控制 */
 ```
+> 默认body字体大小一般为16px  
+> 标题默认大小:  
+>   
+> * ```<h1>```一般是默认字体的200%   
+> * ```<h2>```一般是默认字体的150%  
+> * ```<h3>```一般是默认字体的120%  
+> * ```<h4>```一般是默认字体的100%  
+> * ```<h5>```一般是默认字体的90%  
+> * ```<h6>```一般是默认字体的60%  
+
 父元素的1.5倍：  
 ```css
 h1 {
@@ -299,6 +310,54 @@ h1 {
     font-size: 1.5em;
 }
 ```
+关键字：  
+
+> * xx-samll  
+> * x-small  
+> * samll    
+> * medium  
+> * large  
+> * x-large  
+> * xx-large  
+  
+> small在大多数浏览器中是12px，每个大小大约比前一个大20% 
+
+**指定字体大小：**  
+
+* 选择关键字，指定作为body规则中的字体大小，相当于页面的默认字体  
+* 使用em或者百分数，相对于body字体大小指定其他元素的字体大小  
+```css
+body {
+    font-size: small;
+}
+h1 {
+    font-size: 150%;
+}
+h2 {
+    font-size: 1.2em;
+}
+```  
+
+**修改Web字体大小：**  
+```css
+@font-face {
+    font-family: "Emblema One";
+    src: url("./EmblemaOne-Regular.woff"), 
+         url("./EmblemaOne-Regular.ttf"); 
+}
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: small;
+}
+/* 在body中定义字体，相当于定义默认字体 */
+h1 {
+    font-family: "Emblema One", sans-serif;
+    font-size: 220%;
+}
+h2 {
+    font-size: 130%;
+}
+```
 ##### 字体颜色
 ```css
 body {
@@ -309,6 +368,12 @@ body {
 ```css
 body {
     font-weight: bold;
+}
+/* 粗体 */
+```
+```css
+body {
+    font-weight: normal;
 }
 ```
 ##### 文本风格

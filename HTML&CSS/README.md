@@ -1,5 +1,8 @@
 # 基础知识  :balloon:
-## 超文本标记语言（HyperText Markup Language，HTML） :triangular_flag_on_post: 
+## <a name="index"/>目录
+* [HTML](#HTML)   
+* [CSS](#CSS)
+## <a name="HTML">超文本标记语言（HyperText Markup Language，HTML） :triangular_flag_on_post: 
 超文本标记语言用来建立网页的结构。  
 
 ## <a name="index"/>目录
@@ -172,9 +175,26 @@ diretions.html中的```<a>```元素是这样的：
 > src为属性名，sweetphoto.gif为属性值
 ***
 ### <a name="lj"/>HTML验证链接[&#128279;](https://validator.w3.org/)
-## 层叠样式表（Cascading Style Sheets，CSS）  :triangular_flag_on_post:
+## <a name="CSS">层叠样式表（Cascading Style Sheets，CSS）  :triangular_flag_on_post:
 层叠样式表用来控制HTML的表现。  
-### style元素 :golf:
+## <a name="index"/>目录
+* [Style](#style)  
+* [添加CSS](#ad)  
+    - [Link元素](#link)  
+    - [继承](#jicheng)  
+    - [注释](#zhusi)  
+    - [属性](#shuxing)  
+    - [字体](#font)  
+        - [字体大小](#fontsize)  
+        - [字体颜色](#fontcolor)  
+        - [字体粗细](#fontbold)  
+        - [字体风格](#fontstyle)
+        - [文本风格](#textstyle)  
+* [类](#lei)  
+* [CSS验证链接](#jianyan)  
+* [资料库](#ziliao)  
+
+### <a name="style"/>style元素 :golf:
 ```html
         <head>
             <title>Starbuzz Coffee</title>
@@ -185,7 +205,7 @@ diretions.html中的```<a>```元素是这样的：
 ```
 > ```<style>```元素放在HTML的首部里，```<style>```标记还有一个（可选的）属性，名为type，它能告诉浏览器你在使用什么类型的样式。[例](./Sample/mission.html)  
 ***
-### 添加CSS :golf:
+### <a name="ad"/>添加CSS :golf:
 增加CSS文件，若要改变```<p>```元素中内容的格式，则需要选择需要添加的元素，如：  
 ```css
 p {
@@ -222,7 +242,7 @@ p {
 > * sans-serif字体适合作标题，这种字体没有衬线，段落一般使用serif字体，有[衬线](https://baike.baidu.com/item/%E8%A1%AC%E7%BA%BF%E5%AD%97%E4%BD%93)  
 > * 使用border-bottom，这条线会延伸到页面边缘，而使用underline时，下划线只会出现在文本下面  
 ***
-#### ```<link>```元素  
+#### <a name="link"/> ```<link>```元素  
 ```<link>```元素：从html到外部样式表,不再需要```<style>```元素    
 ```css
     <title>Head First Lounge</title>
@@ -232,7 +252,7 @@ p {
 * ```<link>```void元素，键入外部信息，放在```<head>```元素中    
 * rel属性指定了HTML文件与所链接的文件之间的关系，我们要链接到一个样式表，所以这里使用值"stylesheet"   
 ***
-#### 覆盖继承 
+#### <a name="jicheng"/>覆盖继承 
 若想在```<body>```中使用字体sans-serif,又想在```<em>```中使用字体serif，则  
 ```css
 body {
@@ -245,10 +265,10 @@ em {
 ```
 > ```<em>```元素嵌套在```<body>```内，更多继承规则见《CSS Pocket Reference》   
 ***
-#### 注释
+#### <a name="zhusi"/>注释
 用```/*```和```*/```包围   
 ***
-#### 属性
+#### <a name="shuxing"/>属性
 * color: 设置文本元素字体颜色  
 * background-color: 控制元素的背景颜色  
 * background-image: 在元素后面放置一张图像  
@@ -264,7 +284,7 @@ em {
 * text-align: 将文本左对齐，居中或者右对齐  
 * text-decoration: 对文本加一些装饰，包括上划线、下划线和删除线  
 ***
-#### 字体
+#### <a name="font"/>字体
 ***
 ##### 字体
 ```css
@@ -314,7 +334,7 @@ h1 {
 > ```@import```: 允许导入其他CSS文件  
 > ```@media```: 允许创建某些特定于某些“媒体”类型的CSS规则，如印刷页、手机
 
-##### 字体大小
+##### <a name="fontsize"/>字体大小
 设置一个字体高度为14像素：字母的最低部分与最高部分之间的距离有14像素  
 ```css
 body {
@@ -392,13 +412,31 @@ h2 {
     font-size: 130%;
 }
 ```
-##### 字体颜色
+##### <a name="fontcolor"/>字体颜色
+Web颜色是按构成颜色的红、绿、蓝三个分量所占数量来指定的  
+> 红色100%、绿色100%、蓝色100%混合在一起，就会得到白色  
+> 红色0%、绿色0%、蓝色0%混合在一起，就会得到黑色  
+
+**按名字指定颜色**  
 ```css
 body {
     color: silver;
 }
 ```
-##### 字体粗细
+**用红、绿、蓝值指定颜色**  
+```css
+body {
+    background-color: rgb(80%, 40%, 0%);
+}
+```
+```css
+body {
+    background-color: rgb(204, 102, 0);
+}
+```
+**使用十六进制码指定颜色**  
+一个十六进制码中，每组2位数字分别代表颜色的红、绿、蓝分量,就像```#cc6600```,```#cc6600```可以缩写成```#c60```    
+##### <a name="fontbold"/>字体粗细
 ```css
 body {
     font-weight: bold;
@@ -410,14 +448,38 @@ body {
     font-weight: normal;
 }
 ```
-##### 文本风格
+##### <a name="fontstyle"/>字体风格
+```font-style```属性为文本增加风格  
+
+> 不是所有的字体都支持斜体风格(italic),所以你得到的实际上是倾斜文本(oblique)  
+##### <a name="textstyle"/>文本风格
 ```css
 body {
     text-decoration: underline;
 }
+/* underline下划线*/
 ```
+```css
+em {
+    text-decoration: line-through;
+}
+/* linethrough 表示em元素上有一个从文本中间穿过的横线*/
+```
+```css
+em {
+    text-decoration: underline overline;
+}
+/* underline overline使得em元素有一个下划线和一个上划线 */
+```
+```css
+em {
+    text-decoration: none;
+}
+/* none 表示em元素没有任何装饰 */
+```
+
 ***
-#### 增加类
+#### <a name="lei"/>增加类
 ```html
     <p class="greentea">
     <!-- 要将一个元素加入一个类，只需要增加元素"class",并提供类名"greentea" -->
@@ -450,10 +512,9 @@ blockquote.greentea, p.greentea {
 <p class="greentea raspberry blueberry">
 <!-- 类名的顺序不重要,会按照CSS文件最后一个值来选择 -->
 ```
-## HTML验证链接[&#128279;](https://validator.w3.org/)
-## CSS验证链接[&#128279;](http://jigsaw.w3.org/css-validator/)
-## 资料库 :triangular_flag_on_post:
-### [Html颜色代码](http://www.shouce.ren/api/html/html4/appendix-color.html) 
+## <a name="jianyan"/>CSS验证链接[&#128279;](http://jigsaw.w3.org/css-validator/)
+## <a name="ziliao"/>资料库 :triangular_flag_on_post:
+### [Html颜色代码](https://en.wikipedia.org/wiki/Web_colors#HTML_color_names) 
 > 用CSS指定颜色有很多不同的方式，最常用的一种方式为“十六进制码”，#d2b48c就是一个十六进制码，实际上是土黄色。
 ### [Html字体样式](https://www.w3schools.com/cssref/css_websafe_fonts.asp)  
 ### [w3schools_icons](https://www.w3schools.com/icons/default.asp) 

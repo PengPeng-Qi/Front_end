@@ -1,10 +1,9 @@
 # 基础知识  :balloon:
 ## <a name="index"/>目录
-* [HTML](#HTML)   
+* [HTML](#HTML)  
 * [CSS](#CSS)
 ## <a name="HTML">超文本标记语言（HyperText Markup Language，HTML） :triangular_flag_on_post: 
 超文本标记语言用来建立网页的结构。  
-
 ## <a name="index"/>目录
 * [元素](#code)  
     * [结构](#structure)  
@@ -26,14 +25,13 @@
 ***
 #### <a name="structure"/>结构  
 ***
-**```<!doctype html>```元素**指定版本号：HTML5，放在开头   
+**```<!doctype html>```元素**指定版本号：HTML5，放在开头。   
+
+**```<head>...</head>```元素**head元素的内容就是网页的信息
   
-**```<head>...</head>```元素**head元素的内容就是网页的信息  
-    
-**```<body>...</body>```元素**body元素的内容就是将在浏览器里看到的东西  
-    
-**```<meta>```标记**  
+**```<body>...</body>```元素**body元素的内容就是将在浏览器里看到的东西
   
+**```<meta>```**标记  
 ```html
 <meta charset="utf-8">
 ```  
@@ -471,6 +469,7 @@ em {
 }
 /* underline overline使得em元素有一个下划线和一个上划线 */
 ```
+[例](./Sample/TextStyle_underline_overline.HTML)
 ```css
 em {
     text-decoration: none;

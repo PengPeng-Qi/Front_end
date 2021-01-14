@@ -10,8 +10,9 @@
 #### [命令行](https://baike.baidu.com/item/命令提示符/998728?fromtitle=命令行&fromid=196110&fr=aladdin)
 * [Wins常用命令行](https://jingyan.baidu.com/article/ceb9fb1074947b8cad2ba0f9.html)  
 * [Wins命令行大全](https://www.cnblogs.com/accumulater/p/7110811.html)  
+* [自制Wins常用命令行](./Sample/命令行操作.md)
 > 使用“Win+R”快捷键召唤出运行窗口，再在运行中输入cmd。
-#### [创建虚拟环境](./创建虚拟环境.md)
+#### [创建虚拟环境](./Sample/创建虚拟环境.md)
 #### [互联网是如何工作的](https://developer.mozilla.org/zh-CN/docs/learn/How_the_Internet_works)
 ##### 什么是HTTP？  
   * HTTP(Hyper Text Makeup Language)即**超文本传输协议**，是WWW客户端程序和WWW服务器程序之间的通信协议。为Web浏览器与Web服务器之间的通信而设计的，但也可以用于其他目的。HTTP遵循经典的**客户端-服务端**模型，客户端打开一个连接以发出请求，然后等待直到收到服务器端响应。

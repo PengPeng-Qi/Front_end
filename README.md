@@ -1,7 +1,7 @@
 ## Welcome to my website,there are my notes of competer.:blush:
 ## [Developing计划](https://github.com/kamranahmedse/developer-roadmap/tree/master/translations/chinese)：:triangular_flag_on_post:
 ### <a name="index"/>目录
-* [互联网](.Internet/Sample/互联网是如何工作的.md)
+* [互联网](./Internet/Sample/互联网是如何工作的.md)
     * 互联网是如何工作的  
     * 什么是HTTP  
     * 浏览器及其运行机制  

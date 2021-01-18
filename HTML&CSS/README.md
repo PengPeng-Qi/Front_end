@@ -173,6 +173,7 @@ diretions.html中的```<a>```元素是这样的：
 > src为属性名，sweetphoto.gif为属性值
 ***
 ### <a name="lj"/>HTML验证链接[&#128279;](https://validator.w3.org/)
+### 更多资料请参考[&#128279;](https://www.w3school.com.cn/html/index.asp)
 ## <a name="CSS">层叠样式表（Cascading Style Sheets，CSS）  :triangular_flag_on_post:
 层叠样式表用来控制HTML的表现。  
 ## <a name="index"/>目录
@@ -188,7 +189,9 @@ diretions.html中的```<a>```元素是这样的：
         - [字体粗细](#fontbold)  
         - [字体风格](#fontstyle)
         - [文本风格](#textstyle)  
+            + [文本行高](#line-height)  
 * [类](#lei)  
+* [盒模型](#boxmodel)  
 * [CSS验证链接](#jianyan)  
 * [资料库](#ziliao)  
 
@@ -410,6 +413,8 @@ h2 {
     font-size: 130%;
 }
 ```
+> Web字体：如果要使用一种字体，而默认情况下用户可能没有安装这种字体，可以在CSS中使用```@font-face```  
+
 ##### <a name="fontcolor"/>字体颜色
 Web颜色是按构成颜色的红、绿、蓝三个分量所占数量来指定的  
 > 红色100%、绿色100%、蓝色100%混合在一起，就会得到白色  
@@ -476,8 +481,23 @@ em {
 }
 /* none 表示em元素没有任何装饰 */
 ```
-
+下边框：可自定义颜色,下边框可以延伸直到页面边缘[例](./Sample/TextStyle_underline_color.HTML)    
+```css
+h1, h2 {
+    color: #cc6600;
+    border-bottom: thin dotted #888888;
+}
+/* 下边框颜色为#888888 */
+```
 ***
+##### <a name="line-height">文本行高
+通过使用line-height属性，我们改变了文本各行之间的间隔  
+```css
+body {
+    line-height: 1.6em;
+}
+/*将各行之间的距离改为1.6em，换句话说，就是字体大小的1.6倍*/
+```
 #### <a name="lei"/>增加类
 ```html
     <p class="greentea">
@@ -511,6 +531,11 @@ blockquote.greentea, p.greentea {
 <p class="greentea raspberry blueberry">
 <!-- 类名的顺序不重要,会按照CSS文件最后一个值来选择 -->
 ```
+#### <a name="boxmodel"/>盒模型
+* 内容区  
+* 内边距  
+* 边框  
+* 外边距  
 ## <a name="jianyan"/>CSS验证链接[&#128279;](http://jigsaw.w3.org/css-validator/)
 ## <a name="ziliao"/>资料库 :triangular_flag_on_post:
 ### [Html颜色代码](https://en.wikipedia.org/wiki/Web_colors#HTML_color_names) 
@@ -518,3 +543,4 @@ blockquote.greentea, p.greentea {
 ### [Html字体样式](https://www.w3schools.com/cssref/css_websafe_fonts.asp)  
 ### [w3schools_icons](https://www.w3schools.com/icons/default.asp) 
 ### 字体托管网站:[FontSquiriel](https://www.fontsquirrel.com/)、[Google Web字体服务](https://fonts.google.com/)  
+### 更多资料请参考[&#128279;](https://www.w3school.com.cn/css/index.asp)

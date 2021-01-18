@@ -8,7 +8,7 @@
     * DNS及其运行机制  
     * 什么是域名  
     * 什么是网站托管  
-* [HTML](./HTML&CSS/README.md)  
+* [HTML](./HTML&CSS/README.md#HTML)  
     * 学习HTML基础  
     * 表单和验证  
     * 惯例和最佳实践  

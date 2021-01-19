@@ -18,7 +18,7 @@
 * [特殊字符](#spc)  
 * [属性](#sx)  
 * [HTML验证链接](#lj)   
-* [资料库](#ziliao1)  
+* [资料库](#ziliao)  
 ### <a name="code"/>元素 :golf:
 ***
 #### 元素 = 开始标记 + 内容 + 结束标记   
@@ -197,7 +197,7 @@ diretions.html中的```<a>```元素是这样的：
 * [类](#lei)  
 * [盒模型](#boxmodel)  
 * [CSS验证链接](#jianyan)  
-* [资料库](#ziliao)  
+* [资料库](#ziliao1)  
 
 ### <a name="style"/>style元素 :golf:
 ```html

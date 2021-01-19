@@ -18,7 +18,7 @@
 * [特殊字符](#spc)  
 * [属性](#sx)  
 * [HTML验证链接](#lj)   
-* [资料库](#ziliao)  
+* [资料库](#ziliao1)  
 ### <a name="code"/>元素 :golf:
 ***
 #### 元素 = 开始标记 + 内容 + 结束标记   
@@ -541,7 +541,7 @@ blockquote.greentea, p.greentea {
 * 边框  
 * 外边距  
 ## <a name="jianyan"/>CSS验证链接[&#128279;](http://jigsaw.w3.org/css-validator/)
-## <a name="ziliao"/>资料库 :triangular_flag_on_post:
+## <a name="ziliao1"/>资料库 :triangular_flag_on_post:
 ### [Html颜色代码](https://en.wikipedia.org/wiki/Web_colors#HTML_color_names) 
 > 用CSS指定颜色有很多不同的方式，最常用的一种方式为“十六进制码”，#d2b48c就是一个十六进制码，实际上是土黄色。
 ### [Html字体样式](https://www.w3schools.com/cssref/css_websafe_fonts.asp)  

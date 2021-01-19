@@ -17,8 +17,8 @@
 * [嵌套](#qt)  
 * [特殊字符](#spc)  
 * [属性](#sx)  
-* [HTML验证链接](#lj) 
-
+* [HTML验证链接](#lj)   
+* [资料库](#ziliao)  
 ### <a name="code"/>元素 :golf:
 ***
 #### 元素 = 开始标记 + 内容 + 结束标记   
@@ -173,7 +173,9 @@ diretions.html中的```<a>```元素是这样的：
 > src为属性名，sweetphoto.gif为属性值
 ***
 ### <a name="lj"/>HTML验证链接[&#128279;](https://validator.w3.org/)
-### 更多资料请参考[&#128279;](https://www.w3school.com.cn/html/index.asp)
+### <a name="ziliao">资料库:golf:
+* 更多资料请参考[&#128279;](https://www.w3school.com.cn/html/index.asp)  
+* [HTML实体符号参考手册](https://www.w3school.com.cn/tags/html_ref_entities.html)
 ## <a name="CSS">层叠样式表（Cascading Style Sheets，CSS）  :triangular_flag_on_post:
 层叠样式表用来控制HTML的表现。  
 ## <a name="index"/>目录

@@ -178,6 +178,10 @@ diretions.html中的```<a>```元素是这样的：
 * [HTML实体符号参考手册](https://www.w3school.com.cn/tags/html_ref_entities.html)  
 * [ASCII字符集](https://www.w3school.com.cn/tags/html_ref_ascii.asp)  
 * [URL编码参考手册](https://www.w3school.com.cn/tags/html_ref_urlencode.html)  
+* [Html颜色代码](https://en.wikipedia.org/wiki/Web_colors#HTML_color_names)  
+   * 用CSS指定颜色有很多不同的方式，最常用的一种方式为“十六进制码”，#d2b48c就是一个十六进制码，实际上是土黄色。 
+* [Html字体样式](https://www.w3schools.com/cssref/css_websafe_fonts.asp)  
+* [w3schools_icons](https://www.w3schools.com/icons/default.asp)  
 ## <a name="CSS">层叠样式表（Cascading Style Sheets，CSS）  :triangular_flag_on_post:
 层叠样式表用来控制HTML的表现。  
 ## <a name="index"/>目录
@@ -542,9 +546,5 @@ blockquote.greentea, p.greentea {
 * 外边距  
 ## <a name="jianyan"/>CSS验证链接[&#128279;](http://jigsaw.w3.org/css-validator/)
 ## <a name="ziliao1"/>资料库 :triangular_flag_on_post:
-### [Html颜色代码](https://en.wikipedia.org/wiki/Web_colors#HTML_color_names) 
-> 用CSS指定颜色有很多不同的方式，最常用的一种方式为“十六进制码”，#d2b48c就是一个十六进制码，实际上是土黄色。
-### [Html字体样式](https://www.w3schools.com/cssref/css_websafe_fonts.asp)  
-### [w3schools_icons](https://www.w3schools.com/icons/default.asp) 
 ### 字体托管网站:[FontSquiriel](https://www.fontsquirrel.com/)、[Google Web字体服务](https://fonts.google.com/)  
 ### 更多资料请参考[&#128279;](https://www.w3school.com.cn/css/index.asp)

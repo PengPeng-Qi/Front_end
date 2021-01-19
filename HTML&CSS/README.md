@@ -175,7 +175,9 @@ diretions.html中的```<a>```元素是这样的：
 ### <a name="lj"/>HTML验证链接[&#128279;](https://validator.w3.org/)
 ### <a name="ziliao">资料库:golf:
 * 更多资料请参考[&#128279;](https://www.w3school.com.cn/html/index.asp)  
-* [HTML实体符号参考手册](https://www.w3school.com.cn/tags/html_ref_entities.html)
+* [HTML实体符号参考手册](https://www.w3school.com.cn/tags/html_ref_entities.html)  
+* [ASCII字符集](https://www.w3school.com.cn/tags/html_ref_ascii.asp)  
+* [URL编码参考手册](https://www.w3school.com.cn/tags/html_ref_urlencode.html)  
 ## <a name="CSS">层叠样式表（Cascading Style Sheets，CSS）  :triangular_flag_on_post:
 层叠样式表用来控制HTML的表现。  
 ## <a name="index"/>目录

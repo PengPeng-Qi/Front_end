@@ -23,9 +23,9 @@
     - [Text Elements](#TextElements)  
     - [Logical Styles](#LogicalStyles) 
     - [Physical Styles](#PhysicalStyles)  
-    - [Links, Anchors, and Image Elements](#LinksAnchorsandImageElements)  
-    - [Unordered list](#Unorderedlist) 
-    - [Ordered list](#Orderedlist)  
+    - [Links, Anchors, and Image Elements](#LAIE)  
+    - [Unordered list](#Ul) 
+    - [Ordered list](#Ol)  
     - [Definition list](#Definitionlist)  
     - [Tables](#Tables)  
     - [Frames](#Frames)  
@@ -217,7 +217,7 @@ diretions.html中的```<a>```元素是这样的：
 <b>This text is bold</b>
 <i>This text is italic</i>
 ```
-<a name="LinksAnchorsandImagElements">**Links, Anchors, and Image Elements** 
+<a name="LAIE">**Links, Anchors, and Image Elements** 
 ```html
 <a href="http://www.example.com/">This is a Link</a>
 <a href="http://www.example.com/"><img src="URL" alt="Alternate Text"></a>
@@ -225,21 +225,21 @@ diretions.html中的```<a>```元素是这样的：
 <a name="tips">Useful Tips Section</a>
 <a href="#tips">Jump to the Useful Tips Section</a>
 ```
-<a name="Unorderedlist">**Unordered list**  
+<a name="UL">**Unordered list**  
 ```html
 <ul>
     <li>First item</li>
     <li>Next item</li>
 </ul>
 ```
-<a name="Orderedlist">**Ordered list**  
+<a name="Ol">**Ordered list**  
 ```html
 <ol>
     <li>First item</li>
     <li>Next item</li>
 </ol>
 ```
-<a name="Definitiolist">**Definition list**
+<a name="Definitionlist">**Definition list**
 ```html
 <dl>
     <dt>First term</dt>

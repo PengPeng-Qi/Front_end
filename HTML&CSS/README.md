@@ -19,6 +19,19 @@
 * [属性](#sx)  
 * [HTML验证链接](#lj)  
 * [速查手册](#reference)  
+    - [HTML Basic Document](#HTMLBasicDocument)  
+    - [Text Elements](#TextElements)  
+    - [Logical Styles](#LogicalStyles) 
+    - [Physical Styles](#PhysicalStyles)  
+    - [Links, Anchors, and Image Elements](#LinksAnchorsandImageElements)  
+    - [Unordered list](#Unorderedlist) 
+    - [Ordered list](#Orderedlist)  
+    - [Definition list](#Definitionlist)  
+    - [Tables](#Tables)  
+    - [Frames](#Frames)  
+    - [Forms](#Forms)  
+    - [Entities](#Entities)  
+    - [Other Elements](#OtherElements)  
 * [资料库](#ziliao)  
 ### <a name="code"/>元素 :golf:
 ***
@@ -175,7 +188,7 @@ diretions.html中的```<a>```元素是这样的：
 ***
 ### <a name="lj"/>HTML验证链接[&#128279;](https://validator.w3.org/)
 ### <a name="reference">速查手册:golf:  
-**HTML Basic Document**  
+<a name="HTMLBasicDocument">**HTML Basic Document**  
 ```html
 <html>
     <head>
@@ -186,26 +199,25 @@ diretions.html中的```<a>```元素是这样的：
     </body>
 </html>
 ```
-**Text Elements**  
+<a name="TextElements">**Text Elements**  
 ```html
 <p>This is a paragraph</p>
     <br> (line break)
     <hr> (horizontal rule)
 <pre>This text is preformatted</pre>
 ```
-**Logical Styles**  
+<a name="LogicalStyles">**Logical Styles**  
 ```html
 <em>This text is emphasized</em>
 <strong>This text is strong</strong>
 <code>This is some computer code</code>
 ```
-**Physical Styles**  
+<a name="PhysicalStyles">**Physical Styles**  
 ```html
 <b>This text is bold</b>
 <i>This text is italic</i>
 ```
-```html
-**Links, Anchors, and Image Elements**  
+<a name="LinksAnchorsandImagElements">**Links, Anchors, and Image Elements** 
 ```html
 <a href="http://www.example.com/">This is a Link</a>
 <a href="http://www.example.com/"><img src="URL" alt="Alternate Text"></a>
@@ -213,21 +225,21 @@ diretions.html中的```<a>```元素是这样的：
 <a name="tips">Useful Tips Section</a>
 <a href="#tips">Jump to the Useful Tips Section</a>
 ```
-**Unordered list**  
+<a name="Unorderedlist">**Unordered list**  
 ```html
 <ul>
     <li>First item</li>
     <li>Next item</li>
 </ul>
 ```
-**Ordered list**  
+<a name="Orderedlist">**Ordered list**  
 ```html
 <ol>
     <li>First item</li>
     <li>Next item</li>
 </ol>
 ```
-**Definition list**
+<a name="Definitiolist">**Definition list**
 ```html
 <dl>
     <dt>First term</dt>
@@ -236,7 +248,7 @@ diretions.html中的```<a>```元素是这样的：
         <dd>Definition</dd>
 </dl>
 ```
-**Tables**  
+<a name="Tables">**Tables**  
 ```html
 <table border="1">
 <tr>
@@ -249,14 +261,14 @@ diretions.html中的```<a>```元素是这样的：
 </tr>
 </table>
 ```
-**Frames**  
+<a name="Frames">**Frames**  
 ```html
 <frameset cols="25%,75%">
   <frame src="page1.htm">
   <frame src="page2.htm">
 </frameset>
 ```
-**Forms**  
+<a name="Forms">**Forms**  
 ```html 
 <form action="http://www.example.com/test.asp" method="post/get">
 <input type="text" name="lastname"
@@ -276,13 +288,13 @@ value="Nixon" size="30" maxlength="50">
 cols="20"></textarea>
 </form>
 ```
-**Entities**  
+<a name="Entities">**Entities**  
 ```html
 &lt; is the same as <
 &gt; is the same as >
 &#169; is the same as ©
 ```
-**Other Elements**  
+<a name="OtherElements">**Other Elements**  
 ```html
 <!-- This is a comment -->
 <blockquote>

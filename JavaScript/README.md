@@ -14,7 +14,8 @@
 ### <a name="yufa"/>语法和基本构造 :golf:
 #### <a name="link"/>目录
 * [运算符号](#FH)  
-* [数据类型](#DateTypes)
+* [数据类型](#DateTypes)  
+* [函数](#function)  
 ***
 ##### <a name="FH">运算符号
 ######  <a name="link"/>目录
@@ -239,3 +240,13 @@ typeof null                  // 返回 "object"
 typeof function myFunc(){}   // 返回 "function"
 ```
 > ```typeof``` 运算符把数组返回为 "```object```"，因为在 JavaScript 中数组即对象。
+  
+##### <a name="function">函数  
+**JavaScript 函数是被设计为执行特定任务的代码块。**  
+  
+**JavaScript 函数会在某代码调用它时被执行。**  
+```js
+function myFunction(p1, p2) {
+  return p1 * p2;   // The function returns the product of p1 and p2
+}
+```

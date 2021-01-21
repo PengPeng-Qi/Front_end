@@ -1,4 +1,4 @@
-## <a name="link"/>JavaScript目录
+## <a name="link"/>JavaScript目录:triangular_flag_on_post:
 * [语法和基本构造](#yufa)  
 * [学些DOM操作](#DOM)  
 * [学习Fetch API / Ajax(XHR)](#FAA)  
@@ -12,7 +12,11 @@
     * 严格模式  
 ***
 ### <a name="yufa"/>语法和基本构造 :golf:
-#### JavaScript算术
+#### <a name="link"/>目录
+* [运算符号](#FH)  
+* [数据类型](#DateTypes)
+***
+##### <a name="FH">运算符号
 除```/```:
 ```js
 <!DOCTYPE html>
@@ -90,3 +94,21 @@ The ++ Operator
 </script>
 ```
 运算符号优先级表[&#128279;](https://www.w3school.com.cn/js/js_arithmetic.asp)  
+***
+##### <a name="DateTypes">数据类型
+当添加数字和字符串时，JavaScript会将数字视为字符串  
+```js
+var x = 16 + "Volvo";
+//等同于
+var x = "16" + "Volvo";
+```
+JavaScript从左到右评估表达式。不同的序列可以产生不同的结果：  
+  
+```js
+var x = 16 + 4 + "Volvo";
+//20Volvo
+```
+```js
+var x = "Volvo" + 16 + 4;
+//Volvo164
+```

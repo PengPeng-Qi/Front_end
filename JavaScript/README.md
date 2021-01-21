@@ -103,7 +103,7 @@ var x = 16 + "Volvo";
 var x = "16" + "Volvo";
 ```
 JavaScript从左到右评估表达式。不同的序列可以产生不同的结果：  
-  
+
 ```js
 var x = 16 + 4 + "Volvo";
 //20Volvo
@@ -112,3 +112,64 @@ var x = 16 + 4 + "Volvo";
 var x = "Volvo" + 16 + 4;
 //Volvo164
 ```
+JavaScript具有**动态类型**。这意味着可以使用同一变量来保存不同的数据类型：  
+```js
+var x;           // Now x is undefined
+x = 5;           // Now x is a Number
+x = "John";      // Now x is a String
+```
+###### 字符串 :round_pushpin:
+**字符串**用引号引起来。您可以使用单引号或双引号：  
+```js
+var carName1 = "Volvo XC60";   // Using double quotes
+var carName2 = 'Volvo XC60';   // Using single quotes
+```
+###### 数字 :round_pushpin:
+**数字**可以带或不带小数：  
+```js
+var x1 = 34.00;     // Written with decimals
+var x2 = 34;        // Written without decimals
+```
+可以使用科学（指数）表示法来写特大号或小号：
+```js
+var y = 123e5;      // 12300000
+var z = 123e-5;     // 0.00123
+```
+###### 布尔值 :round_pushpin:
+**布尔值**只能有两个值：true或false  
+```js
+var x = 5;
+var y = 5;
+var z = 6;
+(x == y)       // Returns true
+(x == z)       // Returns false
+```
+> 在条件测试中经常使用布尔值  
+  
+###### 数组 :round_pushpin:
+JavaScript数组用方括号括起来,数组项用逗号分隔  
+```js
+var cars = ["Saab", "Volvo", "BMW"];
+```
+###### 对象 :round_pushpin:
+JavaScript对象用大括号编写```{}```,对象属性写为名称：值对，用逗号分隔  
+```js
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+```
+###### 运算符的类型 :round_pushpin:
+使用JavaScript ```typeof```运算符来查找JavaScript变量的类型  
+```js
+typeof ""             // Returns "string"
+typeof "John"         // Returns "string"
+typeof 3.14           // Returns "number"
+typeof (3)            // Returns "number"
+```
+###### 未定义 :round_pushpin:  
+在JavaScript中，没有值的变量具有value undefined。类型也是undefined  
+```js
+var car;    // Value is undefined, type is undefined
+```
+>通过将值设置为，可以清空任何变量undefined。类型也将是undefined  
+> ```js
+> car = undefined;    // Value is undefined, type is undefined
+> ```

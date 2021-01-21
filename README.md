@@ -24,7 +24,7 @@
         * 网格布局  
         * 弹性布局  
     * 响应式设计和媒体查询  
-* [JavaScript](#JavaScript)  
+* [JavaScript](./JavaScript/README.md)  
     * 语法和基本构造  
     * 学些DOM操作  
     * 学习Fetch API / Ajax(XHR)  

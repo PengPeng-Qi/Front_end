@@ -17,7 +17,13 @@
 * [数据类型](#DateTypes)
 ***
 ##### <a name="FH">运算符号
-除```/```:
+######  <a name="link"/>目录
+* [除/](#Chu)  
+* [余%](#Yu)  
+* [增量式++](#Zls)  
+* [求幂](#Qm)  
+  
+<a name="Chu"> 除```/```:
 ```js
 <!DOCTYPE html>
     <html>
@@ -42,7 +48,7 @@ The / Operator
   
 2.5
 ```
-余```%``` :  
+<a name="Yu">余```%``` :  
 ```js
 <script>
     var x = 5;
@@ -55,7 +61,7 @@ The % Operator
   
 1
 ```
-增量式```++```：  
+<a name="Zls">增量式```++```：  
 ```js
 <!DOCTYPE html>
     <html>
@@ -82,7 +88,7 @@ The ++ Operator
 ```
 > 同理：```--```递减
    
-求幂：  
+<a name="Qm">求幂：  
   
 * ```**```  
 * ```Math.pow(x,y)```  
@@ -96,6 +102,18 @@ The ++ Operator
 运算符号优先级表[&#128279;](https://www.w3school.com.cn/js/js_arithmetic.asp)  
 ***
 ##### <a name="DateTypes">数据类型
+###### <a name="link"/>目录  
+* [字符串](#String)  
+* [数字](#Number)  
+* [布尔值](#Bool)  
+* [数组](#Array)  
+* [对象](#Objects)  
+* [typeof 运算符](#Typeof)  
+* [Undefined](#Undefined)  
+* [空值](#Empty)  
+* [Null](#Null)  
+* [复杂数据](#Date)  
+  
 当添加数字和字符串时，JavaScript会将数字视为字符串  
 ```js
 var x = 16 + "Volvo";
@@ -118,13 +136,13 @@ var x;           // Now x is undefined
 x = 5;           // Now x is a Number
 x = "John";      // Now x is a String
 ```
-###### 字符串 :round_pushpin:
+###### <a name="String">字符串 :round_pushpin:
 **字符串**用引号引起来。您可以使用单引号或双引号：  
 ```js
 var carName1 = "Volvo XC60";   // Using double quotes
 var carName2 = 'Volvo XC60';   // Using single quotes
 ```
-###### 数字 :round_pushpin:
+###### <a name="Number">数字 :round_pushpin:
 **数字**可以带或不带小数：  
 ```js
 var x1 = 34.00;     // Written with decimals
@@ -135,7 +153,7 @@ var x2 = 34;        // Written without decimals
 var y = 123e5;      // 12300000
 var z = 123e-5;     // 0.00123
 ```
-###### 布尔值 :round_pushpin:
+###### <a name="Bool">布尔值 :round_pushpin:
 **布尔值**只能有两个值：true或false  
 ```js
 var x = 5;
@@ -146,17 +164,17 @@ var z = 6;
 ```
 > 在条件测试中经常使用布尔值  
   
-###### 数组 :round_pushpin:
+###### <a name="Array">数组 :round_pushpin:
 JavaScript数组用方括号括起来,数组项用逗号分隔  
 ```js
 var cars = ["Saab", "Volvo", "BMW"];
 ```
-###### 对象 :round_pushpin:
+###### <a name="Objects">对象 :round_pushpin:
 JavaScript对象用大括号编写```{}```,对象属性写为名称：值对，用逗号分隔  
 ```js
 var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 ```
-###### 运算符的类型 :round_pushpin:
+###### <a name="Typeof">typeof 运算符 :round_pushpin:
 使用JavaScript ```typeof```运算符来查找JavaScript变量的类型  
 ```js
 typeof ""             // Returns "string"
@@ -164,12 +182,60 @@ typeof "John"         // Returns "string"
 typeof 3.14           // Returns "number"
 typeof (3)            // Returns "number"
 ```
-###### 未定义 :round_pushpin:  
-在JavaScript中，没有值的变量具有value undefined。类型也是undefined  
+###### <a name="Undefined">Undefined :round_pushpin:  
+在 JavaScript 中，没有值的变量，其值是 undefine, typeof 也返回 undefined  
 ```js
 var car;    // Value is undefined, type is undefined
 ```
->通过将值设置为，可以清空任何变量undefined。类型也将是undefined  
+>任何变量均可通过设置值为 undefined 进行清空, 其类型也将是 undefined   
 > ```js
 > car = undefined;    // Value is undefined, type is undefined
 > ```
+  
+###### <a name="Empty">空值 :round_pushpin:  
+空值与 undefined 不是一回事，空的字符串变量既有值也有类型  
+> ```js
+> var car = "";     // 值是 ""，类型是 "string"
+> ```
+  
+###### <a name="Null">Null :round_pushpin:  
+在 JavaScript 中，null 是 "nothing"。它被看做不存在的事物  
+  
+不幸的是，在 JavaScript 中，null 的数据类型是对象  
+  
+您可以把 null 在 JavaScript 中是对象理解为一个 bug。它本应是 null  
+  
+您可以通过设置值为 null 清空对象：  
+```js
+var person = null;           // 值是 null，但是类型仍然是对象
+```
+也可以通过设置值为 undefined 清空对象：  
+```js
+var person = undefined;     // 值是 undefined，类型是 undefined
+```
+> Undefined 与 Null 的区别  
+> Undefined 与 null 的值相等，但类型不相等：   
+> ```js
+> typeof undefined              // undefined
+> typeof null                   // object
+> null === undefined            // false
+> null == undefined             // true
+> ```
+  
+###### <a name="Date">复杂数据 :round_pushpin:  
+```typeof``` 运算符可返回以下两种类型之一：  
+  
+* function  
+* object  
+  
+```typeof``` 运算符把对象、数组或 ```null``` 返回 ```object```  
+  
+```typeof``` 运算符不会把函数返回 ```object```  
+  
+```js
+typeof {name:'Bill', age:62} // 返回 "object"
+typeof [1,2,3,4]             // 返回 "object" (并非 "array"，参见下面的注释)
+typeof null                  // 返回 "object"
+typeof function myFunc(){}   // 返回 "function"
+```
+> ```typeof``` 运算符把数组返回为 "```object```"，因为在 JavaScript 中数组即对象。

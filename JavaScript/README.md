@@ -75,7 +75,7 @@ The % Operator
             <script>
                 var x = 5;
                 x++;
-                var z = x / y;
+                var z = x;
                 document.getElementById("demo").innerHTML = z;
             </script>
 

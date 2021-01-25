@@ -16,6 +16,7 @@
 * [运算符号](#FH)  
 * [数据类型](#DateTypes)  
 * [函数](#function)  
+* [对象](#Object)  
 ***
 ##### <a name="FH">运算符号
 ######  <a name="link"/>目录
@@ -249,4 +250,125 @@ typeof function myFunc(){}   // 返回 "function"
 function myFunction(p1, p2) {
   return p1 * p2;   // The function returns the product of p1 and p2
 }
+```
+##### <a name="Object">对象  
+在真实生活中，汽车是一个**对象**，汽车有诸如车重和颜色等**属性**，也有诸如启动和停止的**方法**  
+
+把**多个值**（porsche, 911, white）赋给名为 car 的**变量**：  
+```js
+var car = {type:"porsche", model:"911", color:"white"};
+```
+值以**名称:值**对的方式来书写（名称和值由冒号分隔）  
+###### <a name="link"/> 目录  
+* [对象属性](#OBJ_Type)  
+* [对象方法](#OBJ_FF)  
+* [this关键词](#OBJ_GJC)  
+* [对象定义](#OBJ_DEF)  
+* [访问对象属性](#OBJ_SHUX)  
+* [访问对象方法](#OBJ_FANGF) 
+* [Tip](#Tip)  
+
+###### <a name="OBJ_Type">对象属性:round_pushpin:  
+（JavaScript 对象中的）名称:值对被称为**属性**  
+```js
+var car = {type:"porsche", model:"911", color:"white"};
+```
+###### <a name="OBJ_FF">对象方法:round_pushpin:  
+方法是在对象上执行的**动作**，方法以**函数定义**被存储在属性中  
+  
+方法是作为属性来存储的函数  
+```js
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  id       : 678,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+```
+###### <a name="OBJ_GJC">this关键词:round_pushpin:  
+在函数定义中，this 引用该函数的“拥有者”。  
+  
+在上面的例子中，this 指的是“拥有” fullName 函数的** person 对象**。  
+  
+换言之，this.firstName 的意思是** this 对象**的 firstName 属性。  
+###### <a name="OBJ_DEF">对象定义:round_pushpin:  
+定义（创建）了一个 JavaScript 对象：  
+```js
+var person = {
+    firstName:"Bill",
+    lastName:"Gates",
+    age:50,
+    eyeColor:"blue"
+};
+```
+###### <a name="OBJ_SHUX">访问对象属性:round_pushpin:  
+两种方式访问属性：  
+```js
+    objectName.propertyName
+    //等同于
+    objectName["propertyName"]
+```
+###### <a name="OBJ_FANGF">访问对象方法:round_pushpin:  
+通过如下语法访问对象方法：  
+
+* ```objectName.methodName()```  
+  
+    实例  
+    ```js
+    <script>
+    // 创建对象：
+    var person = {
+        firstName: "Bill",
+        lastName : "Gates",
+        id       : 12345,
+        fullName : function() {
+           return this.firstName + " " + this.lastName;
+        }
+    };
+
+    // 显示对象中的数据：
+    document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+    ```
+    ```js
+    Javascript 对象方法
+    对象方法是一种函数定义，存储为属性值。
+
+    Bill Gates
+    ```
+  
+* 如果**不使用 () **访问 fullName 方法，则将返回**函数定义**：  
+```js
+<script>
+// 创建对象：
+var person = {
+    firstName: "Bill",
+    lastName : "Gates",
+    id       : 12345,
+    fullName : function() {
+       return this.firstName + " " + this.lastName;
+    }
+};
+
+// 显示对象中的数据：
+document.getElementById("demo").innerHTML = person.fullName;
+</script>
+```
+```js
+Javascript 对象方法
+
+如果您不使用 () 访问对象，则返回函数定义：
+
+unction() { return this.firstName + " " + this.lastName; }
+```
+> 方法实际上是以属性值的形式存储的函数定义。
+###### <a name="Tip">请不要把字符串、数值和布尔值声明为对象！:round_pushpin:  
+如果通过关键词 "new" 来声明 JavaScript 变量，则该变量会被创建为对象：  
+  
+```js
+    var x = new String();        // 把 x 声明为 String 对象
+    var y = new Number();        // 把 y 声明为 Number 对象
+    var z = new Boolean();       // 把 z 声明为 Boolean 对象
 ```

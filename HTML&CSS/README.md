@@ -12,6 +12,7 @@
     * [换行](#hh)  
     * [排序](#px)  
     * [图片](#im)  
+    * [视频、音频](#audio)  
     * [注释](#zs)  
 * [其他元素](#other)    
 * [嵌套](#qt)  
@@ -147,6 +148,53 @@ diretions.html中的```<a>```元素是这样的：
 > * ```<img>```元素是一个内联元素，它不会在前面或后面插入换行。 
 > * 一般，图像宽度小于800像素，logo宽度一般在100到200像素之间。  
 ***
+#### <a name="audio"/>视频、音频
+***
+```html
+<video src="rabbit320.webm" controls>
+  <p>你的浏览器不支持 HTML5 视频。可点击<a href="rabbit320.mp4">此链接</a>观看</p>
+</video>
+```
+
+```src```属性指向你想要嵌入网页当中的视频资源  
+
+```controls```用户能够控制视频和音频的回放功能  
+  
+```<video>``` 标签内的内容,这个叫做后备内容 — 当浏览器不支持```<video>``` 标签的时候，就会显示这段内容  
+  
+```html
+<video controls>
+  <source src="rabbit320.mp4" type="video/mp4">
+  <source src="rabbit320.webm" type="video/webm">
+  <p>你的浏览器不支持 HTML5 视频。可点击<a href="rabbit320.mp4">此链接</a>观看</p>
+</video>
+```
+>视频应当包括 WebM 和 MP4 两种格式，这两种在目前已经足够支持大多数平台和浏览器。  
+>每个 ```<source>``` 标签页含有一个 type 属性，这个属性是可选的  
+  
+##### 其他特性:
+```html
+<video controls width="400" height="400"
+       autoplay loop muted
+       poster="poster.png">
+  <source src="rabbit320.mp4" type="video/mp4">
+  <source src="rabbit320.webm" type="video/webm">
+  <p>你的浏览器不支持 HTML5 视频。可点击<a href="rabbit320.mp4">此链接</a>观看</p>
+</video>
+```
+>```width``` 和 ```height```, 你可以用属性控制视频的尺寸，也可以用 CSS 来控制视频尺寸  
+>```autoplay``` 这个属性会使音频和视频内容立即播放，即使页面的其他部分还没有加载完全。  
+>```loop``` 这个属性可以让音频或者视频文件循环播放。同样不建议使用，除非有必要。  
+>```muted``` 这个属性会导致媒体播放时，默认关闭声音。  
+>```poster``` 这个属性指向了一个图像的URL，这个图像会在视频播放前显示。通常用于粗略的预览或者广告。  
+>```preload``` 这个属性被用来缓冲较大的文件，有3个值可选：
+- ```"none"``` ：不缓冲、
+-  ```"auto"``` ：页面加载后缓存媒体文件、
+- ```"metadata"``` ：仅缓冲文件的元数据  
+<hr>
+  
+* ```<audio>``` 标签不支持 ```width/height``` 属性 — 由于其并没有视觉部件，也就没有可以设置 ```width/height``` 的内容。  
+* 同时也不支持 ```poster``` 属性 — 同样，没有视觉部件。
 #### <a name="zs"/>注释
 ***
 把注释放在 ``` <!-- 和 --> ``` 之间，例如:  ```<!-- Here's the beginning of the lounge content --> ```   

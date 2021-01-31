@@ -24,6 +24,7 @@
 * [余%](#Yu)  
 * [增量式++](#Zls)  
 * [求幂](#Qm)  
+* [指数](#index)  
   
 <a name="Chu"> 除```/```:
 ```js
@@ -101,7 +102,11 @@ The ++ Operator
     document.getElementById("demo").innerHTML = Math.pow(x,2);
 </script>
 ```
-运算符号优先级表[&#128279;](https://www.w3school.com.cn/js/js_arithmetic.asp)  
+<a name="index">指数  
+>  有时你可能会看到使用较旧的``` Math.pow() ```方法表达的指数，该方法的工作方式非常相似。  
+>  在``` Math.pow(7, 3) ``` 中，7 是基数，3 是指数，因此表达式的结果是 343。  
+
+[运算符号优先级表](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Expressions_and_Operators#%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7)[&#128279;](https://www.w3school.com.cn/js/js_arithmetic.asp)  
 ***
 #### <a name="DateTypes">数据类型
 ##### <a name="link"/>目录  

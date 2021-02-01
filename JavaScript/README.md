@@ -307,16 +307,6 @@ typeof null                  // 返回 "object"
 typeof function myFunc(){}   // 返回 "function"
 ```
 > ```typeof``` 运算符把数组返回为 "```object```"，因为在 JavaScript 中数组即对象。
-  
-#### <a name="function">函数  
-**JavaScript 函数是被设计为执行特定任务的代码块。**  
-  
-**JavaScript 函数会在某代码调用它时被执行。**  
-```js
-function myFunction(p1, p2) {
-  return p1 * p2;   // The function returns the product of p1 and p2
-}
-```
 
 #### <a name="Switch">条件语句
 ##### switch语句
@@ -427,6 +417,43 @@ do ... while 语句：
 
     i++;
   } while (i < cats.length);*/
+```
+  
+#### <a name="function">函数  
+**JavaScript 函数是被设计为执行特定任务的代码块。**  
+  
+**JavaScript 函数会在某代码调用它时被执行。**  
+```js
+function myFunction(p1, p2) {
+  return p1 * p2;   // The function returns the product of p1 and p2
+}
+```
+**匿名函数：**  
+```js
+function() {
+  alert('hello');
+}
+//没有名称的函数叫作匿名函数  
+```
+> 函数不会自己作任何事，通常将函数与事件处理程序一起使用。
+  
+```js
+var myButton = document.querySelector('button');
+
+myButton.onclick = function() {
+  alert('hello');
+}
+//要求 <button> 在页面上提供可用于选择并单击的元素
+```
+还可以将匿名函数分配为变量的值，例如：
+```js
+var myGreeting = function() {
+  alert('hello');
+}
+```
+然后调用此函数：  
+```js
+myGreeting();
 ```
 #### <a name="Object">对象  
 在真实生活中，汽车是一个**对象**，汽车有诸如车重和颜色等**属性**，也有诸如启动和停止的**方法**  

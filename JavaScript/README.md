@@ -15,6 +15,7 @@
 ### <a name="link"/>目录
 * [运算符号](#FH)  
 * [数据类型](#DateTypes)  
+* [条件语句](#Switch)  
 * [函数](#function)  
 * [对象](#Object)  
 ***
@@ -315,6 +316,117 @@ typeof function myFunc(){}   // 返回 "function"
 function myFunction(p1, p2) {
   return p1 * p2;   // The function returns the product of p1 and p2
 }
+```
+
+#### <a name="Switch">条件语句
+##### switch语句
+```js
+switch (expression) {
+  case choice1:
+    run this code
+    break;
+
+  case choice2:
+    run this code instead
+    break;
+
+  // include as many cases as you like
+
+  default:
+    actually, just run this code
+  /*关键字 switch, 后跟一组括号.
+    括号内的表达式或值.
+    关键字 case, 后跟一个选项的表达式/值，后面跟一个冒号.
+    如果选择与表达式匹配，则运行一些代码.
+    一个 break 语句, 分号结尾. 如果先前的选择与表达式/值匹配，则浏览器在此停止执行代码块，并执行switch语句之后的代码.
+    你可以添加任意的 case 选项（选项3-5）.
+    关键字 default, 后面跟随和 case 完全相同的代码模式 (选项 3–5), except that default 之后不需要再有选项, 并且您不需要 break 语句, 因为之后没有任何运行代码. 如果之前没有选项匹配，则运行default选项.*/
+}
+```
+switch语句示例：  
+  
+```js
+var select = document.querySelector('select');
+var para = document.querySelector('p');
+
+select.addEventListener('change', setWeather);
+
+function setWeather() {
+  var choice = select.value;
+
+  switch (choice) {
+    case 'sunny':
+      para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+      break;
+    case 'rainy':
+      para.textContent = 'Rain is falling outside; take a rain coat and a brolly, and don\'t stay out for too long.';
+      break;
+    case 'snowing':
+      para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+      break;
+    case 'overcast':
+      para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+      break;
+    default:
+      para.textContent = '';
+  }
+}
+```
+三元运算符：  
+```js
+//( condition ) ? run this code : run this code instead
+var greeting = ( isBirthday ) ? 'Happy birthday Mrs. Smith — we hope you have a great day!' : 'Good morning Mrs. Smith.';
+```
+##### 循环：
+  
+**使用continue跳过迭代：**  
+  
+continue语句以类似的方式工作，而不是完全跳出循环，而是跳过当前循环而执行下一个循环。  
+  
+**while语句和do ... while语句：**  
+  
+while:  
+   
+```js
+  initializer
+  while (exit-condition) {
+    // code to run
+
+    final-expression
+  }
+  /*var i = 0;
+
+  while (i < cats.length) {
+    if (i === cats.length - 1) {
+      info += 'and ' + cats[i] + '.';
+    } else {
+      info += cats[i] + ', ';
+    }
+
+    i++;
+  }*/
+```
+
+do ... while 语句：    
+  
+```js
+  initializer
+  do {
+    // code to run
+
+    final-expression
+  } while (exit-condition)
+  /*var i = 0;
+
+  do {
+    if (i === cats.length - 1) {
+      info += 'and ' + cats[i] + '.';
+    } else {
+      info += cats[i] + ', ';
+    }
+
+    i++;
+  } while (i < cats.length);*/
 ```
 #### <a name="Object">对象  
 在真实生活中，汽车是一个**对象**，汽车有诸如车重和颜色等**属性**，也有诸如启动和停止的**方法**  

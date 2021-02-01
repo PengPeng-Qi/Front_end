@@ -120,7 +120,7 @@ The ++ Operator
 * [空值](#Empty)  
 * [Null](#Null)  
 * [复杂数据](#Date)  
-  
+* [转义字符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String#parameters)  
 当添加数字和字符串时，JavaScript会将数字视为字符串  
 ```js
 var x = 16 + "Volvo";
@@ -175,6 +175,66 @@ var z = 6;
 JavaScript数组用方括号括起来,数组项用逗号分隔  
 ```js
 var cars = ["Saab", "Volvo", "BMW"];
+```
+创建数组：  
+```js
+let sequence = [1, 1, 2, 3, 5, 8, 13];
+```
+获取数组长度:  
+
+使用 length 属性获取数组的长度  
+```js
+sequence.length;
+// should return 7
+```
+数组和字符串之间的转换：  
+
+```split()```、```join()```  
+  
+```js
+let myData = 'Manchester,London,Liverpool,Birmingham,Leeds,Carlisle';
+let myArray = myData.split(',');
+myArray;
+// ["Manchester", "London", "Liverpool", "Birmingham", "Leeds", "Carlisle"]
+```
+```join()```方法相反:  
+
+```js
+let myArray = ["Manchester", "London", "Liverpool", "Birmingham", "Leeds", "Carlisle"];
+let myNewString = myArray.join(',');
+myNewString;
+//"Manchester,London,Liverpool,Birmingham,Leeds,Carlisle"
+```
+将数组转换为字符串的另一种方法是使用``` toString() ```方法。``` toString() ```可以比``` join() ```更简单，因为它不需要一个参数，但更有限制  
+
+```js
+let dogNames = ["Rocket","Flash","Bella","Slugger"];
+dogNames.toString(); //Rocket,Flash,Bella,Slugger
+```
+添加和删除数组项：  
+
+要在数组末尾添加或删除一个项目，我们可以使用 ``` push() ```和``` pop() ```：  
+```js
+let myArray = ["Manchester", "London", "Liverpool", "Birmingham", "Leeds", "Carlisle"];
+myArray.push('Cardiff');
+myArray;
+//["Manchester", "London", "Liverpool", "Birmingham", "Leeds", "Carlisle", "Cardiff"]
+```
+``` unshift() ```和``` shift() ```从功能上与``` push() ```和``` pop() ```完全相同，只是它们分别作用于数组的开始，而不是结尾  
+
+```js
+let myArray = ["Manchester", "London", "Liverpool", "Birmingham", "Leeds", "Carlisle"];
+myArray.unshift('Edinburgh');
+myArray;
+// ["Edinburgh", "Manchester", "London", "Liverpool", "Birmingham", "Leeds", "Carlisle"]
+```
+```js
+let myArray = ["Manchester", "London", "Liverpool", "Birmingham", "Leeds", "Carlisle"];
+let removedItem = myArray.shift();
+myArray;
+//["London", "Liverpool", "Birmingham", "Leeds", "Carlisle"]
+removedItem;
+//"Manchester"
 ```
 ##### <a name="Objects">对象 :round_pushpin:
 JavaScript对象用大括号编写```{}```,对象属性写为名称：值对，用逗号分隔  

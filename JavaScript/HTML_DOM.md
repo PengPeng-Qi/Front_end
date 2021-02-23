@@ -1,4 +1,3 @@
-![ad](https://raw.githubusercontent.com/PengPeng-Qi/Goodnotes/main/JavaScript/src/nodeType_properties.PNG)
 ## HTML DOM 
 <b>The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</b>
 
@@ -384,8 +383,8 @@ document.getElementById("id02").innerHTML = document.getElementById("id01").node
 
 <!-- 显示为1 -->
 ```
-
-![properties](‪https://raw.githubusercontent.com/PengPeng-Qi/Goodnotes/main/JavaScript/src/nodeType_properties.PNG)  
+  
+![properties](‪/src/nodeType_properties.PNG)  
   
 ### <a name="Elements"/>HTML DOM Elements (Nodes)
 ##### Creating New HTML Elements (Nodes)

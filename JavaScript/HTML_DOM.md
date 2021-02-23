@@ -1,3 +1,4 @@
+![ad](https://raw.githubusercontent.com/PengPeng-Qi/Goodnotes/main/JavaScript/src/nodeType_properties.PNG)
 ## HTML DOM 
 <b>The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</b>
 

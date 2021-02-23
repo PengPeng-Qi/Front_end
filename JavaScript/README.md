@@ -1,6 +1,6 @@
 # <a name="link"/>JavaScript目录:triangular_flag_on_post:
 * [语法和基本构造](#yufa)  
-* [学些DOM操作](.HTML_DOM.md)  
+* [学些DOM操作](./HTML_DOM.md)  
 * [学习Fetch API / Ajax(XHR)](#FAA)  
 * [ES6+ 和模块化 JavaScript](#EJ)  
 * [学习一些概念：](#GN)  

@@ -385,7 +385,7 @@ document.getElementById("id02").innerHTML = document.getElementById("id01").node
 ```
   
   
-![nodeType_properties](https://raw.githubusercontent.com/PengPeng-Qi/Goodnotes/main/JavaScript/src/nodeType_properties.PNG)
+![nodeType_properties](/src/nodeType_properties.PNG)
   
 ### <a name="Elements"/>HTML DOM Elements (Nodes)
 ##### Creating New HTML Elements (Nodes)

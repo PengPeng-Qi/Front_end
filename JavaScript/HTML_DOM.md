@@ -383,7 +383,7 @@ document.getElementById("id02").innerHTML = document.getElementById("id01").node
 
 <!-- 显示为1 -->
 ```
-![important nodeType properties](‪C:\Users\ASUS\Desktop\捕获.PNG)
+![important nodeType properties](‪./src/nodeType_properties.png)
 ### <a name="Elements"/>HTML DOM Elements (Nodes)
 ##### Creating New HTML Elements (Nodes)
 ```html

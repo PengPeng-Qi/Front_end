@@ -6,7 +6,19 @@ The W3C DOM standard is separated into 3 different parts:
 * Core DOM - standard model for all document types  
 * XML DOM - standard model for XML documents  
 * HTML DOM - standard model for HTML documents  
-### Finding HTMl Elements
+
+### <a name="index"/>Contents
+* [Finding HTMl Elements](#Elements)  
+* [HTML DOM - Changing HTML](#HTML)  
+* [HTML DOM - Changing CSS](#CSS)  
+* [HTML DOM Animation](#Animation)  
+* [HTML DOM Events](#Events)  
+* [HTML DOM EventListener](#EventListener)  
+* [HTML DOM Navigation](#Navigation)  
+* [HTML DOM Elements](#Elements)  
+* [HTML DOM Collections](#Collections)  
+
+### <a name="Elements"/>Finding HTMl Elements
 * Finding HTML elements by id  
 * Finding HTML elements by tag name  
 * Finding HTML elements by class name  
@@ -37,7 +49,7 @@ document.querySelectorAll("p.intro")
 * document.links  
 * document.scripts  
 * document.title  
-### HTML DOM - Changing HTML
+### <a name="HTML"/>HTML DOM - Changing HTML
 ##### Changing the HTML Output Stream
 document.write() can be used to write directly to the HTML output stream:  
 ```html
@@ -69,7 +81,7 @@ To change the value of an HTML attribute, use this syntax:
 document.getElementById("myImage").src = "landscape.jpg";
 </script>
 ```
-### HTML DOM - Changing CSS
+### <a name="CSS"/>HTML DOM - Changing CSS
 ##### Changing HTML Style
 To change the style of an HTML element, use this syntax:
 ```html
@@ -91,7 +103,7 @@ onclick="document.getElementById('id1').style.color = 'red'">
 Click Me!</button>
 ```
 [HTML DOM Style Object Reference.](https://www.w3schools.com/jsref/dom_obj_style.asp)
-### HTML DOM Animation(动画)
+### <a name="Animation"/>HTML DOM Animation(动画)
 ##### A Basic Web Page
 To demonstrate how to create HTML animations with JavaScript, we will use a simple web page:  
 ```html
@@ -146,7 +158,7 @@ function frame() {
 }
 ```
 [Example_Animation](https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_3)
-### HTML DOM Events
+### <a name="Events"/>HTML DOM Events
 ##### Reacting to Events
 To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute:  
 ```
@@ -239,7 +251,7 @@ function mUp(obj) {
 </script>
 ```
 [HTML DOM Event Object Reference](https://www.w3schools.com/jsref/dom_obj_event.asp)
-### HTML DOM EventListener
+### <a name="EventListener"/>HTML DOM EventListener
 ##### Syntax
 ```
 element.addEventListener(event, function, useCapture);
@@ -310,7 +322,7 @@ The removeEventListener() method removes event handlers that have been attached 
 ```
 element.removeEventListener("mousemove", myFunction); 
 ```
-### HTML DOM Navigation(导航)
+### <a name="Navigation"/>HTML DOM Navigation(导航)
 ##### DOM Nodes
 According to the W3C HTML DOM standard, everything in an HTML document is a node:  
   
@@ -328,3 +340,173 @@ You can use the following node properties to navigate between nodes with JavaScr
 * lastChild  
 * nextSibling  
 * previousSibling  
+##### Child Nodes and Node Values
+```html
+<title id="demo">DOM Tutorial</title> 
+```
+The value of the text node can be accessed by the node's **innerHTML** property: 
+```js
+var myTitle = document.getElementById("demo").innerHTML;
+```
+Accessing the innerHTML property is the same as accessing the **nodeValue** of the first child:
+```js
+var myTitle = document.getElementById("demo").firstChild.nodeValue; 
+```
+Accessing the first child can also be done like this:
+```js
+var myTitle = document.getElementById("demo").childNodes[0].nodeValue;
+```
+##### DOM Root(根) Nodes
+There are two special properties that allow access to the full document:
+  
+* <b>document.body</b> - The body of the document  
+* <b>document.documentElement</b> - The full document  
+##### The nodeName Property
+```html
+ <h1 id="id01">My First Page</h1>
+<p id="id02"></p>
+
+<script>
+document.getElementById("id02").innerHTML = document.getElementById("id01").nodeName;
+</script> 
+
+<!-- 显示为H1 -->
+```
+##### The nodeValue Property
+```html
+<h1 id="id01">My First Page</h1>
+<p id="id02"></p>
+
+<script>
+document.getElementById("id02").innerHTML = document.getElementById("id01").nodeType;
+</script>
+
+<!-- 显示为1 -->
+```
+![important nodeType properties](‪C:\Users\ASUS\Desktop\捕获.PNG)
+### <a name="Elements"/>HTML DOM Elements (Nodes)
+##### Creating New HTML Elements (Nodes)
+```html
+<div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+    // This code creates a new <p> element:
+    var para = document.createElement("p");         
+    // To add text to the <p> element, you must create a text node first. This code creates a text node:    
+    var node = document.createTextNode("This is new.");
+    // Then you must append the text node to the <p> element:
+    para.appendChild(node);
+
+    // Finally you must append the new element to an existing element.
+    // This code finds an existing element:
+    var element = document.getElementById("div1");
+    // This code appends the new element to the existing element:
+    element.appendChild(para);
+</script> 
+```
+##### Creating new HTML Elements - insertBefore()
+```html
+<div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+    var para = document.createElement("p");
+    var node = document.createTextNode("This is new.");
+    para.appendChild(node);
+
+    var element = document.getElementById("div1");
+    var child = document.getElementById("p1");
+    element.insertBefore(para, child);
+</script> 
+```
+##### Removing Existing HTML Elements
+To remove an HTML element, use the `remove()` method:
+```html
+ <div>
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+var elmnt = document.getElementById("p1");
+elmnt.remove();
+</script> 
+```
+##### Removing a Child Node
+For browsers that does not support the `remove()` method, you have to find the parent node to remove an element:
+```html
+<div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+    var parent = document.getElementById("div1");
+    var child = document.getElementById("p1");
+    parent.removeChild(child);
+</script> 
+```
+##### Replacing HTML Elements 
+To replace an element to the HTML DOM, use the `replaceChild()` method:
+```html
+<div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+    var para = document.createElement("p");
+    var node = document.createTextNode("This is new.");
+    para.appendChild(node);
+
+    var parent = document.getElementById("div1");
+    var child = document.getElementById("p1");
+    parent.replaceChild(para, child);
+</script> 
+```
+### <a name="Collections"/>HTML DOM Collections(集)
+##### The HTMLCollection Object
+```html
+<h2>JavaScript HTML DOM</h2>
+<p>Hello World!</p>
+<p>Hello Norway!</p>
+<p id="demo"></p>
+
+<script>
+    var myCollection = document.getElementsByTagName("p");
+    document.getElementById("demo").innerHTML =
+    "The innerHTML of the second paragraph is: " +
+    myCollection[1].innerHTML;
+</script>
+
+// JavaScript HTML DOM
+// Hello World!
+// Hello Norway!
+// The innerHTML of the second paragraph is: Hello Norway!
+```
+##### HTML HTMLCollection Length
+The **length**property defines the number of elements in an HTMLCollection:
+```html
+<h2>JavaScript HTML DOM</h2>
+<p>Hello World!</p>
+<p>Hello Norway!</p>
+<p id="demo"></p>
+
+<script>
+    var myCollection = document.getElementsByTagName("p");
+    document.getElementById("demo").innerHTML = 
+    "This document contains " + myCollection.length + " paragraphs.";
+</script>
+
+// JavaScript HTML DOM
+// Hello World!
+// Hello Norway!
+// This document contains 3 paragraphs.
+```
+> <b>An HTMLCollection is NOT an array!</b>  
+> An HTMLCollection may look like an array, but it is not.

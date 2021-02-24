@@ -1,7 +1,7 @@
 ## JS Browser BOM
 The **B**rowser **O**bject **M**odel (BOM) allows JavaScript to "talk to" the browser.  
 
-### <a name="index"/>Connect 
+### <a name="index"/>Contents 
 - [JavaScript Window - The Browser Object Model](#Window)  
 - [JavaScript Window Screen](#Screen)  
 - [JavaScript Window Location](#location)  

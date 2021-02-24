@@ -567,9 +567,9 @@ For the example we will create 3 JavaScript functions:
     <li>A function to set a cookie value</li>
     <li>A function to get a cookie value</li>
     <li>A function to check a cookie value</li>
-</ol>
-<p><b>A Function to Set a Cookie</b></p>
-First, we create a **function** that stores the name of the visitor in a cookie variable:
+</ol>  
+<b>A Function to Set a Cookie</b>  
+First, we create a **function** that stores the name of the visitor in a cookie variable:  
 ```js
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
@@ -578,9 +578,13 @@ function setCookie(cname, cvalue, exdays) {
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 ```
+
 The parameters(参数) of the function above are the name of the cookie (cname), the value of the cookie (cvalue), and the number of days until the cookie should expire(过期) (exdays).  
-<p><b>A Function to Get a Cookie</b></p>
-Then, we create a function that returns the value of a specified cookie:  
+  
+<b>A Function to Get a Cookie</b>  
+
+Then, we create a function that returns the value of a specified cookie:   
+  
 ```js
 function getCookie(cname) {
   var name = cname + "=";
@@ -612,12 +616,15 @@ function getCookie(cname) {
 
 // 如果未找到 cookie，则返回 ""。
 ```
-<p><b>A Function to Check a Cookie</b></p>
+  
+<b>A Function to Check a Cookie</b>  
+
 Last, we create the function that checks if a cookie is set.  
   
 If the cookie is set it will display a greeting.  
   
 If the cookie is not set, it will display a prompt box, asking for the name of the user, and stores the username cookie for 365 days, by calling the setCookie function:  
+
 ```js
 function checkCookie() {
   var username = getCookie("username");
@@ -630,7 +637,6 @@ function checkCookie() {
     }
   }
 }
-
 ```
 ##### All Together Now
 ```js

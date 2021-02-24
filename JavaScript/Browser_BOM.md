@@ -569,7 +569,9 @@ For the example we will create 3 JavaScript functions:
     <li>A function to check a cookie value</li>
 </ol>  
 <b>A Function to Set a Cookie</b>  
+
 First, we create a **function** that stores the name of the visitor in a cookie variable:  
+  
 ```js
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
@@ -618,7 +620,7 @@ function getCookie(cname) {
 ```
   
 <b>A Function to Check a Cookie</b>  
-
+  
 Last, we create the function that checks if a cookie is set.  
   
 If the cookie is set it will display a greeting.  

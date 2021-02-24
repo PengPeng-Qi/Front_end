@@ -1,7 +1,8 @@
 ## AJAX
 ### <a name="index"/>Contents
-* [AJAX Introduction](#Introduction)  
-
+- [AJAX Introduction](#Introduction)  
+- [AJAX - The XMLHttpRequest Object](#XHR)  
+- [AJAX - Send a Request To a Server](#Request)  
 ### <a name="Introduction"/>AJAX Introduction
 AJAX is a developer's dream, because you can:  
 
@@ -23,3 +24,44 @@ AJAX just uses a combination(组合) of:
 
 ##### How AJAX Works
 ![How AJAX Works](https://raw.githubusercontent.com/PengPeng-Qi/Goodnotes/main/JavaScript/src/pic_ajax.png)
+### <a name="XHR">AJAX - The XMLHttpRequest Object
+The keystone(主旨) of AJAX is the XMLHttpRequest object. 
+##### The XMLHttpRequest Object
+All modern browsers support the `XMLHttpRequest` object.  
+  
+The `XMLHttpRequest` object can be used to exchange data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.  
+##### Create an XMLHttpRequest Object
+Syntax for creating an `XMLHttpRequest` object:
+```js
+variable = new XMLHttpRequest();
+```
+##### Access(访问) Across Domains(域名)(跨域访问)
+For security reasons, modern browsers do not allow access across domains.  
+  
+This means that both the web page and the XML file it tries to load, must be located on the same server.  
+##### Modern Browsers (Fetch(取得) API)
+Modern Browsers can use Fetch API instead of the XMLHttpRequest Object.  
+  
+The Fetch API interface allows web browser to make HTTP requests to web servers.  
+  
+If you use the XMLHttpRequest Object, Fetch can do the same in a simpler way.  
+##### Old Browsers (IE5 and IE6)
+Old versions of Internet Explorer (5/6) use an ActiveX object instead of the `XMLHttpRequest` object:  
+```js
+variable = new ActiveXObject("Microsoft.XMLHTTP");
+```
+To handle IE5 and IE6, check if the browser supports the `XMLHttpRequest` object, or else create an `ActiveX` object:
+```js
+if (window.XMLHttpRequest) {
+   // code for modern browsers
+   xmlhttp = new XMLHttpRequest();
+ } else {
+   // code for old IE browsers
+   xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+} 
+```
+##### XMLHttpRequest Object Methods
+![XMLHttpRequest Object Methods](https://raw.githubusercontent.com/PengPeng-Qi/Goodnotes/main/JavaScript/src/XMLHttpRequest%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95.PNG)
+##### XMLHttpRequest Object Properties
+![XMLHttpRequest Object Properties](https://raw.githubusercontent.com/PengPeng-Qi/Goodnotes/main/JavaScript/src/XMLHttpRequest%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7.PNG)
+### <a name="Request"/>AJAX - Send a Request To a Server

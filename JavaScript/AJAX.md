@@ -65,3 +65,65 @@ if (window.XMLHttpRequest) {
 ##### XMLHttpRequest Object Properties
 ![XMLHttpRequest Object Properties](https://raw.githubusercontent.com/PengPeng-Qi/Goodnotes/main/JavaScript/src/XMLHttpRequest%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7.PNG)
 ### <a name="Request"/>AJAX - Send a Request To a Server
+##### Send a Request To a Server
+To send a request to a server, we use the `open()` and `send()` methods of the `XMLHttpRequest` object:
+```js
+xhttp.open("GET", "ajax_info.txt", true);
+xhttp.send();
+```
+
+<table>
+    <thead>
+        <tr>
+            <th>Method</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody style="font-style: italic;">
+        <tr style="background-color: #eee;">
+            <td>open(method, url, async(异步))</td>
+            <td>Specifies the type of request<br>
+                <br>
+                method: the type of request: GET or POST<br>
+                url: the server (file) location<br>
+                async: true (asynchronous) or false (synchronous)<br>
+            </td>
+        </tr>
+        <tr>
+            <td>send()</td>
+            <td>Sends the request to the server (used for GET)</td>
+        </tr>
+        <tr style="background-color: #eee;">
+            <td>send(string)</td>
+            <td>Sends the request to the server (used for POST)</td>
+        </tr>
+    </tbody>
+</table>
+##### GET or POST?
+<a style="color: red;">`GET`</a> is simpler and faster than <a style="color: red;">`POST`</a>, and can be used in most cases.  
+  
+However, always use POST requests when:  
+  
+* A cached(隐藏的) file is not an option (update a file or database on the server).  
+* Sending a large amount of data to the server (POST has no size limitations).  
+* Sending user input (which can contain unknown characters), POST is more robust(强健、健康的) and secure than GET.  
+  
+##### GET Requests
+A simple <a style="color: red;">`GET`</a> request:  
+  
+```js
+xhttp.open("GET", "demo_get.asp", true);
+xhttp.send(); 
+```
+##### POST Requests
+```js
+xhttp.open("POST", "demo_post.asp", true);
+xhttp.send(); 
+```
+To POST data like an HTML form, add an HTTP header with <a style="color: red;">`setRequestHeader()`</a>. Specify the data you want to send in the <a style="color: red;">`send()`</a> method:  
+  
+```js
+xhttp.open("POST", "ajax_test.asp", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("fname=Henry&lname=Ford"); 
+```

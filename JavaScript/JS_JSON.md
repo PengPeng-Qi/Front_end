@@ -15,7 +15,8 @@
     <p>JSON is a syntax(语法) for storing and exchanging data.</p>
     <p>JSON is text, written with JavaScript object notation.</p>
 </div>
-##### Exchanging Data
+
+##### Exchanging Data  
 When exchanging data between a browser and a server, the data can only be text.  
   
 JSON is text, and we can convert(转变) any JavaScript object into JSON, and send JSON to the server.  

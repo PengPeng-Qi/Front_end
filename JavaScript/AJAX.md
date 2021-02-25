@@ -120,8 +120,8 @@ xhttp.send();
 xhttp.open("POST", "demo_post.asp", true);
 xhttp.send(); 
 ```
-To POST data like an HTML form, add an HTTP header with <a style="color: red;">`setRequestHeader()`</a>. Specify the data you want to send in the <a style="color: red;">`send()`</a> method:  
-  
+To POST data like an HTML form, add an HTTP header with <a style="color: red;">`setRequestHeader()`</a>. Specify the data you want to send in the <a style="color: red;">`send()`</a> method: 
+   
 ```js
 xhttp.open("POST", "ajax_test.asp", true);
 xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");

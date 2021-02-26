@@ -189,7 +189,7 @@ jQuery has the following fade(逐渐消失) methods:
 * <span style="color: red;">`fadeIn()`</span>  
 * <span style="color: red;">`fadeOut()`</span>  
 * <span style="color: red;">`fadeToggle()`</span>  
-* <span style="color: red;">`fadeTo()`</span>`</span>  
+* <span style="color: red;">`fadeTo()`</span>  
   
 ##### jQuery fadeIn() / fadeOut() Method
 The jQuery <span style="color: red;">`fadeIn()`</span> method is used to fade in(淡入) / fade out(淡出) a hidden element.  

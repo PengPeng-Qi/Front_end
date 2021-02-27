@@ -3,7 +3,7 @@
 
 The W3C DOM standard is separated into 3 different parts:
 
-* Core DOM - standard model for all document types  
+* Core(核心) DOM - standard(标准) model for all document types  
 * XML DOM - standard model for XML documents  
 * HTML DOM - standard model for HTML documents  
 
@@ -23,19 +23,28 @@ The W3C DOM standard is separated into 3 different parts:
 * Finding HTML elements by tag name  
 * Finding HTML elements by class name  
 * Finding HTML elements by CSS selectors  
-* Finding HTML elements by HTML object collections  
+* Finding HTML elements by HTML object collections(集合)  
 
 example finds the element with id="intro":  
+```js
 var myElement = document.getElementById("intro");
+```
 
-example finds all `<p>` elements:
+example finds all `<p>` elements:  
+```js
 document.getElementsByTagName("p")  
-  
+```
+
 This example returns a list of all elements with class="intro".  
+```js
 document.getElementsByClassName("intro")  
-  
+```
+
 This example returns a list of all `<p>` elements with class="intro".  
+```js
 document.querySelectorAll("p.intro")  
+```
+  
 <hr>
 <b>he following HTML objects (and object collections) are also accessible:</b>
 

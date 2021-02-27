@@ -130,7 +130,7 @@ To demonstrate how to create HTML animations with JavaScript, we will use a simp
 ##### Create an Animation Container
 All animations should be relative to a container element.
 ```html
- <div id ="container">
+<div id ="container">
   <div id ="animate">My animation will go here</div>
 </div> 
 ```

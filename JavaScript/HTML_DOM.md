@@ -207,11 +207,11 @@ document.getElementById("myBtn").onclick = displayDate;
 </script> 
 ```
 #### The onload and onunload Events
-The <b>onload and onunload</b> events are triggered when the user enters or leaves the page.  
+The <span style="color: red;">`onload and onunload`</span> events are triggered(触发) when the user enters or leaves the page.  
   
 The onload event can be used to check the visitor's browser type and browser version, and load the proper version of the web page based on the information.  
   
-The onload and onunload events can be used to deal with cookies.  
+The <span style="color: red;">`onload`</span> and <span style="color: red;">`onunload`</span> events can be used to deal with cookies.  
 ```html
 <body onload="checkCookies()"> 
 ```
@@ -222,6 +222,7 @@ Below is an example of how to use the onchange. The **upperCase()** function wil
 ```html
 <input type="text" id="fname" onchange="upperCase()"> 
 ```
+[onchange_Event_Example](https://www.w3schools.com/js/tryit.asp?filename=tryjs_onchange)
 #### The onmouseover and onmouseout Events
 The onmouseover and onmouseout events can be used to trigger a function when the user mouses over, or out of, an HTML element:
 ```html

@@ -47,7 +47,7 @@ document.querySelectorAll("p.intro")
   
 <hr>
 <b>he following HTML objects (and object collections) are also accessible:</b>
-
+  
 * document.anchors  
 * document.body  
 * document.documentElement  
@@ -60,7 +60,7 @@ document.querySelectorAll("p.intro")
 * document.title  
 ### <a name="HTML"/>HTML DOM - Changing HTML
 ##### Changing the HTML Output Stream
-document.write() can be used to write directly to the HTML output stream:  
+`document.write()` can be used to write directly to the HTML output stream:  
 ```html
 <script>
     document.write(Date());
@@ -202,7 +202,7 @@ To assign events to HTML elements you can use event attributes.
 ```
 The HTML DOM allows you to assign events to HTML elements using JavaScript,a function named displayDate will be executed when the button is clicked.   
 ```html
- <script>
+<script>
 document.getElementById("myBtn").onclick = displayDate;
 </script> 
 ```

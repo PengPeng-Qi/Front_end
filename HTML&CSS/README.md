@@ -360,7 +360,7 @@ cols="20"></textarea>
 * [HTML实体符号参考手册](https://www.w3school.com.cn/tags/html_ref_entities.html)  
 * [ASCII字符集](https://www.w3school.com.cn/tags/html_ref_ascii.asp)  
 * [URL编码参考手册](https://www.w3school.com.cn/tags/html_ref_urlencode.html)  
-* [Html颜色代码](https://en.wikipedia.org/wiki/Web_colors#HTML_color_names)   
+* [Html颜色代码](https://www.runoob.com/tags/html-colorpicker.html)   
     * 用CSS指定颜色有很多不同的方式，最常用的一种方式为“十六进制码”，#d2b48c就是一个十六进制码，实际上是土黄色。  
 * [Html字体样式](https://www.w3schools.com/cssref/css_websafe_fonts.asp)  
 * [w3schools_icons](https://www.w3schools.com/icons/default.asp)  
